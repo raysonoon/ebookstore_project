@@ -1,0 +1,1 @@
+ store resources that should not be directly accessible by clients; but accessible through servlets or other server-side components. This is also where you keep your application's web descriptor file "web.xml".
