@@ -44,9 +44,9 @@
     var scroll = $(window).scrollTop();
 
     if (scroll >= 200) {
-      $('#header').addClass("fixed-top");
+      $('#header-wrap').addClass("fixed-top");
     }else{
-      $('#header').removeClass("fixed-top");
+      $('#header-wrap').removeClass("fixed-top");
     }
   }
 
