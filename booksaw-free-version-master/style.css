@@ -1839,6 +1839,11 @@ img.post-image {
 
 /*----- Billboard
 --------------------------------------------------------------*/
+
+section#billboard {
+  margin-top: 20px;
+}
+
 #billboard .main-slider {
   padding: 80px 0;
 }
