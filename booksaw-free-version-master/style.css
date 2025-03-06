@@ -31,12 +31,12 @@ Version: 1.1
 
 /* Theme Colors */
 :root {
-  --accent-color: #C5A992;
+  --accent-color: #966a6a;
   --secondary-color: #C5A992;
   --dark-color: #2f2f2f;
-  --light-color: #F3F2EC;
-  --body-text-color: #757575;
-  --light-text-color: #afafaf;
+  --light-color: #eeedeb;
+  --choc-color: #644646;
+  --body-text-color: #d2d2d2;
   --dark-text-color: #2f2f2f;
 }
 
@@ -71,7 +71,7 @@ Version: 1.1
   --bs-primary-dark: #C5A992;
   --bs-secondary: #C5A992;
   --bs-black: #111;
-  --bs-light: #F1F1F0;
+  --bs-light: #eeedeb;
   --bs-dark: #212529;
   --bs-gray: #949494;
   --bs-gray-dark: #51565b;
@@ -304,7 +304,7 @@ body {
   font-size: 16px;
   line-height: 2;
   color: var(--body-text-color);
-  background-color: var(--light-color);
+  background-color: var(--choc-color);
 }
 
 body.no-scroll {
@@ -342,7 +342,7 @@ ol li {
 }
 
 ul li.active a {
-  color: #daa556;
+  color: #c88a8a;
 }
 
 ul li:last-child,
@@ -424,7 +424,7 @@ h6,
 .h6 {
   font-family: var(--heading-font);
   line-height: 1.2;
-  color: var(--dark-color);
+  color: var(--light-color);
 }
 
 h1.light,
@@ -608,7 +608,7 @@ abbr {
 }
 
 .text-muted {
-  color: #777;
+  color: #8C8C8C;
 }
 
 .text-pri {
@@ -1000,13 +1000,13 @@ fieldset[disabled] a.btn {
 
 .btn.btn-outline-accent {
   background: transparent;
-  border-color: var(--accent-color);
-  color: var(--accent-color);
+  border-color: #c88a8a;
+  color: #c88a8a; 
 }
 
 .btn.btn-outline-accent:hover {
-  border-color: var(--dark-color);
-  color: var(--dark-color) !important;
+  border-color: var(--light-color);
+  color: var(--light-color) !important;
 }
 
 .btn.btn-outline-light {
@@ -1477,7 +1477,7 @@ button {
 }
 
 .btn-wrap a:hover {
-  color: #74642F;
+  color: #c88a8a;
 }
 
 .btn-normal {
@@ -1499,7 +1499,7 @@ button {
 }
 
 .btn-accent-arrow {
-  color: #111;
+  color: var(--light-color);
 }
 
 .btn-wrap i.icon {
@@ -1604,7 +1604,7 @@ button {
 
 .section-title.divider:after {
   content: "";
-  border-bottom: 3px solid #74642F;
+  border-bottom: 3px solid #c88a8a;
   position: absolute;
   right: 0;
   bottom: -16px;
@@ -1632,7 +1632,7 @@ button {
 
 .section-header .title span {
   font-size: 14px;
-  color: #afafaf;
+  color: var(--body-text-color);
   text-transform: uppercase;
 }
 
@@ -1698,8 +1698,8 @@ img.post-image {
 --------------------------------------------------------------*/
 .top-content {
   padding: 15px 0;
-  border-bottom: 1px solid #E0E0E0;
-  background-color: #f3f2ec;
+  border-bottom: 3px solid #8C8C8C;
+  background-color: var(--dark-color);
 }
 
 .social-links ul {
@@ -1722,7 +1722,7 @@ img.post-image {
 }
 
 .top-content a {
-  color: #555;
+  color: #8C8C8C;
   text-decoration: none;
 }
 
@@ -1758,7 +1758,7 @@ img.post-image {
 .action-menu .open-icon-wrap {
   width: 40px;
   height: 40px;
-  background: #efeee8;
+  background: var(--light-color);
   border-radius: 40px;
   display: flex;
   justify-content: right;
@@ -1772,7 +1772,7 @@ img.post-image {
   padding-right: 10px;
   padding-left: 10px;
   text-decoration: none;
-  color: var(--body-text-color);
+  color: #8C8C8C;
 }
 
 #header-wrap.show .search-bar {
@@ -1789,7 +1789,7 @@ img.post-image {
   margin-bottom: 0;
   font-weight: 300;
   padding-left: 20px;
-  background: #efeee8;
+  background: var(--light-color);
 }
 
 .action-menu .side-nav-bar .menu-btn a,
@@ -1825,8 +1825,7 @@ img.post-image {
 ------------------------------------------------------------- */
 #header {
   padding: 20px 0;
-  border-bottom: 1px solid #E0E0E0;
-  background-color: #f3f2ec;
+  background-color: var(--dark-color);
 }
 
 #header .menu-list a {
@@ -1860,7 +1859,7 @@ img.post-image {
 .banner-content h2.banner-title {
   font-size: 4.5em;
   font-weight: 500;
-  color: #222;
+  color: var(--light-color);
 }
 
 .banner-content p {
@@ -1888,8 +1887,8 @@ img.post-image {
 }
 
 #billboard button.slick-arrow:hover {
-  border: 1px solid #74642F;
-  background-color: #E5E3DA;
+  border: 1px solid  var(--dark-color);
+  background-color: var(--light-color);
 }
 
 #billboard button.prev.slick-arrow {
@@ -1948,7 +1947,7 @@ img.post-image {
 /*----- Cient-holder Section
 --------------------------------------------------------------*/
 #client-holder {
-  background: #EDEBE4;
+  background: var(--dark-color);
   padding: 105px 0;
 }
 
@@ -1968,7 +1967,7 @@ img.post-image {
 /*----- Best Selling Section Section
 --------------------------------------------------------------*/
 #best-selling {
-  background: #EDEBE4;
+  background: var(--dark-color);
   padding: 120px 0;
 }
 
@@ -1989,7 +1988,7 @@ img.post-image {
 
 #best-selling .product-entry .item-price {
   font-size: 1.5em;
-  color: #74642F;
+  color: #c88a8a;
   margin-bottom: 40px;
 }
 
@@ -2036,7 +2035,7 @@ img.post-image {
 .tabs .tab.active,
 .tabs .tab:hover {
   color: #111;
-  border-bottom: 2px solid #9A884C;
+  border-bottom: 2px solid #c88a8a;
 }
 
 img.books-image {
@@ -2085,7 +2084,7 @@ img.books-image {
 /*----- Special Offer Section
 --------------------------------------------------------------*/
 #special-offer .section-header {
-  background: #EDEBE4;
+  background: var(--dark-color);
   padding: 140px 0 220px;
   margin-bottom: -141px;
   z-index: -1;
@@ -2371,7 +2370,7 @@ footer#footer {
 
 .product-style img.product-item {
   position: relative;
-  background: #EFEEE8;
+  background: var(--light-color);
   border: 1px solid #EAE8DF;
   padding: 15%;
   cursor: pointer;
@@ -2408,7 +2407,7 @@ footer#footer {
 .product-item figcaption>h3 {
   font-size: 1.4em;
   font-weight: 500;
-  color: #74642F;
+  color: #c88a8a;
   margin: 0;
 }
 .product-item figcaption>p {
@@ -2416,7 +2415,7 @@ footer#footer {
 }
 
 .product-item .item-price {
-  color: #74642F;
+  color: #c88a8a;
   font-size: 1.3em;
 }
 
