@@ -1697,8 +1697,7 @@ img.post-image {
 /* -- Top Menu Part
 --------------------------------------------------------------*/
 .top-content {
-  padding: 15px 0;
-  border-bottom: 3px solid #8C8C8C;
+  padding-top: 15px;
   background-color: var(--dark-color);
 }
 
@@ -1824,7 +1823,7 @@ img.post-image {
 /* - Main Navigation
 ------------------------------------------------------------- */
 #header {
-  padding: 20px 0;
+  padding: 5px 0 15px 0;
   background-color: var(--dark-color);
 }
 
@@ -2096,7 +2095,7 @@ img.books-image {
 }
 
 span.prev-price {
-  color: #999;
+  color: #8C8C8C;
   font-size: 0.8em;
   padding-right: 10px;
   text-decoration: line-through;
@@ -2298,10 +2297,9 @@ span.prev-price {
 /*----- Footer Section
 --------------------------------------------------------------*/
 footer#footer {
-  padding-bottom: 80px;
-  margin-top: 100px;
-  margin-bottom: 60px;
-  border-bottom: 1px solid #E0E0E0;
+  margin-top: 150px;
+  padding-top: 50px;
+  background-color: var(--dark-color);
 }
 
 #footer .footer-item {
@@ -2313,7 +2311,7 @@ footer#footer {
 }
 
 #footer .footer-item p {
-  width: 80%;
+  width: 130%;
 }
 
 #footer .footer-menu {
@@ -2326,7 +2324,7 @@ footer#footer {
 }
 
 #footer .footer-menu ul a {
-  color: var(--dark-text-color);
+  color: var(--body-text-color);
   text-decoration: none;
 }
 
@@ -2340,6 +2338,10 @@ footer#footer {
   margin-top: 0;
   margin-bottom: 40px;
   text-transform: capitalize;
+}
+
+#footer-bottom {
+  background-color: var(--dark-color);
 }
 
 @media screen and (max-width: 768px) {
@@ -2370,9 +2372,8 @@ footer#footer {
 
 .product-style img.product-item {
   position: relative;
-  background: var(--light-color);
-  border: 1px solid #EAE8DF;
-  padding: 15%;
+  background: #5b4343;
+  padding: 13%;
   cursor: pointer;
   width: 100%;
 }
