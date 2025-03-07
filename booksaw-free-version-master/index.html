@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<title>E-Bookstore</title>
+	<title>BookStrap E-Bookstore</title>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -128,12 +128,17 @@
 
 					<div class="main-slider pattern-overlay">
 						<div class="slider-item">
-							<div class="banner-content">
+							<div class="banner-content product-item" 
+							data-title="Life of the Wild"
+							data-author="Sanchit Howdy"
+							data-price="$30.00"
+							data-image="images/main-banner1.jpg"
+							data-description="This book is wild about life">
 								<h2 class="banner-title">Life of the Wild</h2>
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu feugiat amet, libero
 									ipsum enim pharetra hac. Urna commodo, lacus ut magna velit eleifend. Amet, quis
 									urna, a eu.</p>
-								<div class="btn-wrap">
+								<div class="btn-wrap" data-bs-toggle="modal" data-bs-target="#bookModal">
 									<a href="#" class="btn btn-outline-accent btn-accent-arrow">Read More<i
 											class="icon icon-ns-arrow-right"></i></a>
 								</div>
@@ -142,12 +147,17 @@
 						</div><!--slider-item-->
 
 						<div class="slider-item">
-							<div class="banner-content">
+							<div class="banner-content product-item"
+							 data-title="Birds gonna be Happy"
+							 data-author="Timbur Hood"
+							 data-price="$45.00"
+							 data-image="images/main-banner2.jpg"
+							 data-description="This book is about happy birds">
 								<h2 class="banner-title">Birds gonna be Happy</h2>
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu feugiat amet, libero
 									ipsum enim pharetra hac. Urna commodo, lacus ut magna velit eleifend. Amet, quis
 									urna, a eu.</p>
-								<div class="btn-wrap">
+								<div class="btn-wrap" data-bs-toggle="modal" data-bs-target="#bookModal">
 									<a href="#" class="btn btn-outline-accent btn-accent-arrow">Read More<i
 											class="icon icon-ns-arrow-right"></i></a>
 								</div>
@@ -201,10 +211,15 @@
 						<div class="row">
 
 							<div class="col-md-3">
-								<div class="product-item">
+								<div class="product-item"
+								 data-title="Simple way of piece life"
+								 data-author="Armor Ramsey"
+								 data-price="$40.00"
+								 data-image="images/product-item1.jpg"
+								 data-description="A peaceful way to live a meaningful life.">
 									<figure class="product-style">
 										<img src="images/product-item1.jpg" alt="Books" class="product-item">
-										<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Read
+										<button type="button" class="add-to-cart" data-product-tile="add-to-cart" data-bs-toggle="modal" data-bs-target="#bookModal">Read
 											More
 										</button>
 									</figure>
@@ -217,10 +232,15 @@
 							</div>
 
 							<div class="col-md-3">
-								<div class="product-item">
+								<div class="product-item"
+								 data-title="Great Travel At Desert"
+								 data-author="Sanchit Howdy"
+								 data-price="#38.00"
+								 data-image="images/product-item2.jpg"
+								 data-description="The desert is great.">
 									<figure class="product-style">
 										<img src="images/product-item2.jpg" alt="Books" class="product-item">
-										<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Read
+										<button type="button" class="add-to-cart" data-product-tile="add-to-cart" data-bs-toggle="modal" data-bs-target="#bookModal">Read
 											More
 										</button>
 									</figure>
@@ -233,10 +253,15 @@
 							</div>
 
 							<div class="col-md-3">
-								<div class="product-item">
+								<div class="product-item"
+								 data-title="The Lady Beauty Scarlett"
+								 data-author="Arthur Doyle"
+								 data-price="$45.00"
+								 data-image="images/product-item3.jpg"
+								 data-description="Scarlett is a beautiful lady.">
 									<figure class="product-style">
 										<img src="images/product-item3.jpg" alt="Books" class="product-item">
-										<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Read 
+										<button type="button" class="add-to-cart" data-product-tile="add-to-cart" data-bs-toggle="modal" data-bs-target="#bookModal">Read 
 											More
 										</button>
 									</figure>
@@ -249,10 +274,15 @@
 							</div>
 
 							<div class="col-md-3">
-								<div class="product-item">
+								<div class="product-item"
+								data-tile="Once Upon A Time"
+								data-author="Klien Marry"
+								data-price="#35.00"
+								data-image="images/product-item4.jpg"
+								data-description="A life adventure like never before.">
 									<figure class="product-style">
 										<img src="images/product-item4.jpg" alt="Books" class="product-item">
-										<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Read
+										<button type="button" class="add-to-cart" data-product-tile="add-to-cart" data-bs-toggle="modal" data-bs-target="#bookModal">Read
 											More
 										</button>
 									</figure>
@@ -1043,6 +1073,28 @@
 			</div>
 		</div>
 	</div>
+
+	<!-- Bootstrap Modal -->
+	 <div class="modal fade" id="bookModal" tabindex="-1" aria-labelleby="bookModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="bookModalLabel">Book Title</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<img id="bookImage" src="" alt="Book Image" class="img-fluid">
+					<p id="bookAuthor"><strong>Author: </strong></p>
+					<p id="bookPrice"><strong>Price: </strong></p>
+					<p id="bookDescription"><strong>Description: </strong></p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary">Add to Cart</button>
+				</div>
+			</div>
+		</div>
+	 </div>
 
 	<script src="js/jquery-1.11.0.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
