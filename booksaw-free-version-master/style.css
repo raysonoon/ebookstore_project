@@ -305,6 +305,7 @@ body {
   line-height: 2;
   color: var(--body-text-color);
   background-color: var(--choc-color);
+  padding-right: 0 !important;
 }
 
 body.no-scroll {
@@ -2299,6 +2300,15 @@ span.prev-price {
   }
 }
 
+.modal-open .fixed-top {
+  padding-right: 0 !important;
+}
+
+.modal-open {
+  overflow:auto;
+  padding-right:0 !important;
+}
+
 /*----- Footer Section
 --------------------------------------------------------------*/
 footer#footer {
@@ -2392,16 +2402,15 @@ footer#footer {
   text-transform: uppercase;
   text-align: center;
   line-height: 3;
-  bottom: 300px;
-  bottom: -65px;
+  bottom: 0;
   left: 0;
+  opacity: 0;
   z-index: 9;
-  transition: 0.3s ease-out;
+  transition: opacity 0.4s ease-out;
 }
 
 .product-style:hover button.add-to-cart {
-  bottom: 380px;
-  bottom: 0;
+  opacity: 1;
 }
 
 .product-item figcaption {
