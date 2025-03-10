@@ -32,9 +32,9 @@
       let description = this.getAttribute("data-description");
 
       // Update modal content
-      document.getElementById("bookModalLabel").textContent = title;
+      document.getElementById("bookModalLabel").innerHTML = `<strong>${title}</strong>`;
       document.getElementById("bookImage").src = image;
-      document.getElementById("bookAuthor").innerHTML = `<strong>Author: </strong>${author}`
+      document.getElementById("bookAuthor").innerHTML = `<strong>Author: </strong>${author}`;
       document.getElementById("bookPrice").innerHTML = `<strong>Price: </strong>${price}`;
       document.getElementById("bookDescription").innerHTML = `<strong>Description: </strong>${description}`;
 
