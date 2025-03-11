@@ -31,6 +31,10 @@
       let image = this.getAttribute("data-image");
       let description = this.getAttribute("data-description");
 
+      // Get book ID and fetch corresponding quantity
+      let bookId = this.getAttribute("data-id");
+      let quantity = fetchBookQuantity(bookId);
+
       // Update modal content
       document.getElementById("bookModalLabel").innerHTML = `<strong>${title}</strong>`;
       document.getElementById("bookImage").src = image;
@@ -42,6 +46,21 @@
       //this.style.display = "none";
     });
   });
+
+  // Fetch book details from server
+  function fetchBookQuantity(bookId) {
+    fetch(`http://localhost:9999/getBook?id=${bookId}`)
+      .then(response => response.json())
+      .then(book => {
+        // Update stock accordingly
+        if (book.error) {
+          document.getElementById("bookQuantity").textContent = book.error;
+        } else {
+          document.getElementById("bookQuantity").textContent = `Stock Available: ${book.stock}`;
+        }
+      })
+      .catch(error => console.error("Error fetching book details:", error));
+  }
 
   // Responsive Navigation with Button
   const hamburger = document.querySelector(".hamburger");
@@ -93,7 +112,6 @@
 
       e.preventDefault();
     });
-
 
     // close when click off of container
     $(document).on('click touchstart', function (e) {
