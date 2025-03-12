@@ -475,7 +475,7 @@ h3,
 
 h4,
 .h4 {
-  font-size: 1.1em;
+  font-size: 1.3em;
   line-height: 1.4;
 }
 
@@ -2336,20 +2336,34 @@ List of cart items
 
 .cart-item {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   border-bottom: 1px solid #ddd;
   padding: 10px 0;
+  margin: 0 300px;
 }
 
-.cart-image {
-  width: 80px;
-  height: auto;
-  margin-right: 15px;
+.cart-item .container-left {
+  display: flex; 
+}
+
+.cart-item .container-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
 }
 
 .cart-details {
-  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.cart-image {
+  width: 180px;
+  height: auto;
+  margin-right: 15px;
 }
 
 .cart-actions {

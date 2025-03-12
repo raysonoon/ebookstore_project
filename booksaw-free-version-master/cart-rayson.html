@@ -18,7 +18,7 @@
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="icomoon/icomoon.css">
 	<link rel="stylesheet" type="text/css" href="css/vendor.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="style-rayson.css">
 
 </head>
 
@@ -41,7 +41,7 @@
 					</div>
 					<div class="col-md-6 text-end">
 						<a href="index.html#popular" class="shop">Continue Shopping <i
-							class="icon icon-ns-arrow-right"></i></a>
+								class="icon icon-ns-arrow-right"></i></a>
 					</div>
 				</div>
 			</div>
@@ -61,9 +61,10 @@
 							<div class="main-menu stellarnav">
 								<ul class="menu-list">
 									<li class="menu-item user-account for-buy"><a href="" class="nav-link"><i
-										class="icon icon-user"></i>Account</a></li>
-									<li class="menu-item active cart for-buy"><a href=""><i class="icon icon-clipboard"></i>Cart: ($0)</a></li>
-									
+												class="icon icon-user"></i>Account</a></li>
+									<li class="menu-item active cart for-buy"><a href=""><i
+												class="icon icon-clipboard"></i>Cart: ($0)</a></li>
+
 								</ul>
 
 								<div class="hamburger">
@@ -85,41 +86,51 @@
 
 	<section id="cart-items">
 		<h2>Your Cart</h2>
-		<div class="container cart-item">
-			<img src="images/product-item1.jpg" alt="Book 1" class="cart-image">
-			<div class="cart-details">
-				<h4>Book Title 1</h4>
-				<h4 class="item-price">$30</h4>
-				<div class="cart-actions">
-					<div class="btn btn-rounded btn-outline-accent quantity-btn">-</div>
-					<span>2</span>
-					<div class="btn btn-rounded btn-outline-accent quantity-btn">+</div>
+		<div class="cart-item">
+			<div class="container-left">
+				<img src="images/product-item1.jpg" alt="Book 1" class="cart-image">
+				<div class="cart-details">
+					<h4>Book Title 1</h4>
+					<h4 class="item-price">$30</h4>
+					<div class="cart-actions">
+						<div class="btn btn-rounded btn-outline-accent quantity-btn">-</div>
+						<span>2</span>
+						<div class="btn btn-rounded btn-outline-accent quantity-btn">+</div>
+					</div>
 				</div>
-				<div class="btn btn-rounded btn-outline-accent remove-btn">Remove</div>
 			</div>
-		</div>
-	
-		<div class="container cart-item">
-			<img src="images/product-item2.jpg" alt="Book 2" class="cart-image">
-			<div class="cart-details">
-				<h4>Book Title 2</h4>
-				<h4 class="item-price">$40</h4>
-				<div class="cart-actions">
-					<div class="btn btn-rounded btn-outline-accent quantity-btn">-</div>
-					<span>2</span>
-					<div class="btn btn-rounded btn-outline-accent quantity-btn">+</div>
-				</div>
+			<div class="container-right">
+				<h4 class="sub-total">Total: </h4>
 				<div class="btn btn-rounded btn-outline-accent remove-btn">Remove</div>
 			</div>
 		</div>
 
-			<div class="cart-checkout">
-				<h2 class="sub-total">Sub-total: $99999</h3>
-				<p>Shipping, taxes and discounts calculated at checkout</p>
-				<button class="checkout-btn">Checkout</button>
+		<div class="cart-item">
+			<div class="container-left">
+				<img src="images/product-item2.jpg" alt="Book 1" class="cart-image">
+				<div class="cart-details">
+					<h4>Book Title 2</h4>
+					<h4 class="item-price">$40</h4>
+					<div class="cart-actions">
+						<div class="btn btn-rounded btn-outline-accent quantity-btn">-</div>
+						<span>1</span>
+						<div class="btn btn-rounded btn-outline-accent quantity-btn">+</div>
+					</div>
+				</div>
 			</div>
+			<div class="container-right">
+				<h4 class="sub-total">Total: </h4>
+				<div class="btn btn-rounded btn-outline-accent remove-btn">Remove</div>
+			</div>
+		</div>
+
+		<div class="cart-checkout">
+			<h2 class="cart-total">Cart Total: $0.00</h3>
+			<p>Shipping, taxes and discounts calculated at checkout</p>
+			<button class="checkout-btn">Checkout</button>
+		</div>
 	</section>
-	
+
 	<footer id="footer">
 		<div class="container">
 			<div class="row">
@@ -271,7 +282,7 @@
 		crossorigin="anonymous"></script>
 	<script src="js/plugins.js"></script>
 	<script src="js/script.js"></script>
-	<script src="js/cart.js"></script>
+	<script src="js/cart-rayson.js"></script>
 
 </body>
 
