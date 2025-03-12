@@ -2357,6 +2357,12 @@ List of cart items
   align-items: center;
 }
 
+.cart-checkout {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
 .quantity-btn span {
   margin: 0 10px;
 }
