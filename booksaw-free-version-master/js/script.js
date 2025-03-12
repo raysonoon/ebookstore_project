@@ -158,6 +158,10 @@
       // mobileMode: false,
     });
 
+     // ✅ Call loadBooks() inside $(document).ready()
+     loadBooks();
+
+  
   }); // End of a document
 
 

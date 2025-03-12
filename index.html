@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<title>BookStrap E-Bookstore</title>
+	<title>BookSaw - Free Book Store HTML CSS Template</title>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,10 +15,10 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 
-	<link rel="stylesheet" type="text/css" href="css/normalize.css">
-	<link rel="stylesheet" type="text/css" href="icomoon/icomoon.css">
-	<link rel="stylesheet" type="text/css" href="css/vendor.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="styles/css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="styles/icomoon/icomoon.css">
+	<link rel="stylesheet" type="text/css" href="styles/css/vendor.css">
+	<link rel="stylesheet" type="text/css" href="styles/index_style.css">
 
 </head>
 
@@ -28,42 +28,47 @@
 
 		<div class="top-content">
 			<div class="container-fluid">
-				<div class="row align-items-center">
+				<div class="row">
 					<div class="col-md-6">
 						<div class="social-links">
 							<ul>
 								<li>
-									<a href="https://github.com/raysonoon/ebookstore_project"><i
-											class="icon icon-github"></i></a>
+									<a href="#"><i class="icon icon-facebook"></i></a>
+								</li>
+								<li>
+									<a href="#"><i class="icon icon-twitter"></i></a>
+								</li>
+								<li>
+									<a href="#"><i class="icon icon-youtube-play"></i></a>
+								</li>
+								<li>
+									<a href="#"><i class="icon icon-behance-square"></i></a>
 								</li>
 							</ul>
 						</div><!--social-links-->
 					</div>
-					<div class="col-md-6" id="userInfo">
+					<div class="col-md-6">
 						<div class="right-element">
-							<a id="userName"></a>
-							<!-- Link to Account Page -->
-							<a href="account.html" class="user-account for-buy">
-								<i class="icon icon-user"></i><span>Account</span>
-							</a>
-							<!-- Link to Cart Page -->
-							<a href="cart.html" class="cart for-buy">
-								<i class="icon icon-clipboard"></i><span>Cart: ($0)</span>
-							</a>
-					
+							<a href="#" class="user-account for-buy"><i
+									class="icon icon-user"></i><span>Account</span></a>
+							<a href="#" class="cart for-buy"><i class="icon icon-clipboard"></i><span>Cart:(0
+									$)</span></a>
+
 							<div class="action-menu">
+
 								<div class="search-bar">
 									<a href="#" class="search-button search-toggle" data-selector="#header-wrap">
 										<i class="icon icon-search"></i>
 									</a>
 									<form role="search" method="get" class="search-box">
-										<input class="search-field text search-input" placeholder="Search" type="search">
+										<input class="search-field text search-input" placeholder="Search"
+											type="search">
 									</form>
 								</div>
 							</div>
+
 						</div><!--top-right-->
 					</div>
-					
 
 				</div>
 			</div>
@@ -75,7 +80,7 @@
 
 					<div class="col-md-2">
 						<div class="main-logo">
-							<a href="index.html"><img src="images/bookstrap-logo.png" alt="logo"></a>
+							<a href="index.html"><img src="images/main-logo.png" alt="logo"></a>
 						</div>
 
 					</div>
@@ -91,15 +96,23 @@
 
 										<ul>
 											<li class="active"><a href="index.html">Home</a></li>
-											<li><a href="about.html">Test</a></li>
-											<li><a href="styles.html">Test 2 <span class="badge bg-dark">TBC</span></a>
-											</li>
+											<li><a href="about.html">About <span class="badge bg-dark">PRO</span></a></li>
+											<li><a href="styles.html">Styles <span class="badge bg-dark">PRO</span></a></li>
+											<li><a href="blog.html">Blog <span class="badge bg-dark">PRO</span></a></li>
+											<li><a href="single-post.html">Post Single <span class="badge bg-dark">PRO</span></a></li>
+											<li><a href="shop.html">Our Store <span class="badge bg-dark">PRO</span></a></li>
+											<li><a href="single-product.html">Product Single <span class="badge bg-dark">PRO</span></a></li>
+											<li><a href="contact.html">Contact <span class="badge bg-dark">PRO</span></a></li>
+											<li><a href="thank-you.html">Thank You <span class="badge bg-dark">PRO</span></a></li>
 										</ul>
 
 									</li>
 									<li class="menu-item"><a href="#featured-books" class="nav-link">Featured</a></li>
 									<li class="menu-item"><a href="#popular-books" class="nav-link">Popular</a></li>
 									<li class="menu-item"><a href="#special-offer" class="nav-link">Offer</a></li>
+									<li class="menu-item"><a href="#latest-blog" class="nav-link">Articles</a></li>
+									<li class="menu-item"><a href="#download-app" class="nav-link">Download App</a></li>
+									<li class="menu-item"><a href="https://templatesjungle.gumroad.com/l/booksaw-free-html-bookstore-template" class="nav-link btn btn-outline-dark rounded-pill m-0" target="_blank">Get PRO</a></li>
 								</ul>
 
 								<div class="hamburger">
@@ -125,16 +138,44 @@
 			<div class="row">
 				<div class="col-md-12">
 
-					
+					<button class="prev slick-arrow">
+						<i class="icon icon-arrow-left"></i>
+					</button>
 
 					<div class="main-slider pattern-overlay">
-						<!--<div class="slider-item">-->
+						<div class="slider-item">
+							<div class="banner-content">
+								<h2 class="banner-title">Life of the Wild</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu feugiat amet, libero
+									ipsum enim pharetra hac. Urna commodo, lacus ut magna velit eleifend. Amet, quis
+									urna, a eu.</p>
+								<div class="btn-wrap">
+									<a href="#" class="btn btn-outline-accent btn-accent-arrow">Read More<i
+											class="icon icon-ns-arrow-right"></i></a>
+								</div>
+							</div><!--banner-content-->
+							<img src="images/main-banner1.jpg" alt="banner" class="banner-image">
+						</div><!--slider-item-->
 
-							<!-- Books will be dynamically inserted here -->
+						<div class="slider-item">
+							<div class="banner-content">
+								<h2 class="banner-title">Birds gonna be Happy</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu feugiat amet, libero
+									ipsum enim pharetra hac. Urna commodo, lacus ut magna velit eleifend. Amet, quis
+									urna, a eu.</p>
+								<div class="btn-wrap">
+									<a href="#" class="btn btn-outline-accent btn-accent-arrow">Read More<i
+											class="icon icon-ns-arrow-right"></i></a>
+								</div>
+							</div><!--banner-content-->
+							<img src="images/main-banner2.jpg" alt="banner" class="banner-image">
+						</div><!--slider-item-->
 
-						<!--</div> slider-item-->
 					</div><!--slider-->
 
+					<button class="next slick-arrow">
+						<i class="icon icon-arrow-right"></i>
+					</button>
 
 				</div>
 			</div>
@@ -175,7 +216,65 @@
 					<div class="product-list" data-aos="fade-up">
 						<div class="row">
 
-							<!-- Books will be dynamically inserted here -->
+							<div class="col-md-3">
+								<div class="product-item">
+									<figure class="product-style">
+										<img src="images/product-item1.jpg" alt="Books" class="product-item">
+										<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+											Cart</button>
+									</figure>
+									<figcaption>
+										<h3>Simple way of piece life</h3>
+										<span>Armor Ramsey</span>
+										<div class="item-price">$ 40.00</div>
+									</figcaption>
+								</div>
+							</div>
+
+							<div class="col-md-3">
+								<div class="product-item">
+									<figure class="product-style">
+										<img src="images/product-item2.jpg" alt="Books" class="product-item">
+										<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+											Cart</button>
+									</figure>
+									<figcaption>
+										<h3>Great travel at desert</h3>
+										<span>Sanchit Howdy</span>
+										<div class="item-price">$ 38.00</div>
+									</figcaption>
+								</div>
+							</div>
+
+							<div class="col-md-3">
+								<div class="product-item">
+									<figure class="product-style">
+										<img src="images/product-item3.jpg" alt="Books" class="product-item">
+										<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+											Cart</button>
+									</figure>
+									<figcaption>
+										<h3>The lady beauty Scarlett</h3>
+										<span>Arthur Doyle</span>
+										<div class="item-price">$ 45.00</div>
+									</figcaption>
+								</div>
+							</div>
+
+							<div class="col-md-3">
+								<div class="product-item">
+									<figure class="product-style">
+										<img src="images/product-item4.jpg" alt="Books" class="product-item">
+										<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+											Cart</button>
+									</figure>
+									<figcaption>
+										<h3>Once upon a time</h3>
+										<span>Klien Marry</span>
+										<div class="item-price">$ 35.00</div>
+									</figcaption>
+								</div>
+							</div>
 
 						</div><!--ft-books-slider-->
 					</div><!--grid-->
@@ -188,7 +287,7 @@
 				<div class="col-md-12">
 
 					<div class="btn-wrap align-right">
-						<a href="#popular-books" class="btn-accent-arrow">View all products <i
+						<a href="#" class="btn-accent-arrow">View all products <i
 								class="icon icon-ns-arrow-right"></i></a>
 					</div>
 
@@ -249,7 +348,7 @@
 						<div class="title">
 							<span>Some quality items</span>
 						</div>
-						<h2 class="section-title">Book Catalogue</h2>
+						<h2 class="section-title">Popular Books</h2>
 					</div>
 
 					<ul class="tabs">
@@ -269,10 +368,8 @@
 									<div class="product-item">
 										<figure class="product-style">
 											<img src="images/tab-item1.jpg" alt="Books" class="product-item">
-											<button type="button" class="add-to-cart"
-												data-product-tile="add-to-cart">Read 
-												More
-											</button>
+											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+												Cart</button>
 										</figure>
 										<figcaption>
 											<h3>Portrait photography</h3>
@@ -286,10 +383,8 @@
 									<div class="product-item">
 										<figure class="product-style">
 											<img src="images/tab-item2.jpg" alt="Books" class="product-item">
-											<button type="button" class="add-to-cart"
-												data-product-tile="add-to-cart">Read 
-												More
-											</button>
+											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+												Cart</button>
 										</figure>
 										<figcaption>
 											<h3>Once upon a time</h3>
@@ -303,10 +398,8 @@
 									<div class="product-item">
 										<figure class="product-style">
 											<img src="images/tab-item3.jpg" alt="Books" class="product-item">
-											<button type="button" class="add-to-cart"
-												data-product-tile="add-to-cart">Read 
-												More
-											</button>
+											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+												Cart</button>
 										</figure>
 										<figcaption>
 											<h3>Tips of simple lifestyle</h3>
@@ -320,10 +413,8 @@
 									<div class="product-item">
 										<figure class="product-style">
 											<img src="images/tab-item4.jpg" alt="Books" class="product-item">
-											<button type="button" class="add-to-cart"
-												data-product-tile="add-to-cart">Read 
-												More
-											</button>
+											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+												Cart</button>
 										</figure>
 										<figcaption>
 											<h3>Just felt from outside</h3>
@@ -340,10 +431,8 @@
 									<div class="product-item">
 										<figure class="product-style">
 											<img src="images/tab-item5.jpg" alt="Books" class="product-item">
-											<button type="button" class="add-to-cart"
-												data-product-tile="add-to-cart">Read 
-												More
-											</button>
+											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+												Cart</button>
 										</figure>
 										<figcaption>
 											<h3>Peaceful Enlightment</h3>
@@ -357,9 +446,8 @@
 									<div class="product-item">
 										<figure class="product-style">
 											<img src="images/tab-item6.jpg" alt="Books" class="product-item">
-											<button type="button" class="add-to-cart"
-												data-product-tile="add-to-cart">Read 
-												More</button>
+											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+												Cart</button>
 										</figure>
 										<figcaption>
 											<h3>Great travel at desert</h3>
@@ -373,9 +461,8 @@
 									<div class="product-item">
 										<figure class="product-style">
 											<img src="images/tab-item7.jpg" alt="Books" class="product-item">
-											<button type="button" class="add-to-cart"
-												data-product-tile="add-to-cart">Read 
-												More</button>
+											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+												Cart</button>
 										</figure>
 										<figcaption>
 											<h3>Life among the pirates</h3>
@@ -389,10 +476,8 @@
 									<div class="product-item">
 										<figure class="product-style">
 											<img src="images/tab-item8.jpg" alt="Books" class="product-item">
-											<button type="button" class="add-to-cart"
-												data-product-tile="add-to-cart">Read 
-												More
-											</button>
+											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+												Cart</button>
 										</figure>
 										<figcaption>
 											<h3>Simple way of piece life</h3>
@@ -411,10 +496,8 @@
 									<div class="product-item">
 										<figure class="product-style">
 											<img src="images/tab-item2.jpg" alt="Books" class="product-item">
-											<button type="button" class="add-to-cart"
-												data-product-tile="add-to-cart">Read 
-												More
-											</button>
+											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+												Cart</button>
 										</figure>
 										<figcaption>
 											<h3>Peaceful Enlightment</h3>
@@ -428,9 +511,8 @@
 									<div class="product-item">
 										<figure class="product-style">
 											<img src="images/tab-item4.jpg" alt="Books" class="product-item">
-											<button type="button" class="add-to-cart"
-												data-product-tile="add-to-cart">Read 
-												More</button>
+											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+												Cart</button>
 										</figure>
 										<figcaption>
 											<h3>Great travel at desert</h3>
@@ -444,9 +526,8 @@
 									<div class="product-item">
 										<figure class="product-style">
 											<img src="images/tab-item6.jpg" alt="Books" class="product-item">
-											<button type="button" class="add-to-cart"
-												data-product-tile="add-to-cart">Read 
-												More</button>
+											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+												Cart</button>
 										</figure>
 										<figcaption>
 											<h3>Life among the pirates</h3>
@@ -460,9 +541,8 @@
 									<div class="product-item">
 										<figure class="product-style">
 											<img src="images/tab-item8.jpg" alt="Books" class="product-item">
-											<button type="button" class="add-to-cart"
-												data-product-tile="add-to-cart">Read 
-												More</button>
+											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+												Cart</button>
 										</figure>
 										<figcaption>
 											<h3>Simple way of piece life</h3>
@@ -481,9 +561,8 @@
 									<div class="product-item">
 										<figure class="product-style">
 											<img src="images/tab-item1.jpg" alt="Books" class="product-item">
-											<button type="button" class="add-to-cart"
-												data-product-tile="add-to-cart">Read 
-												More</button>
+											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+												Cart</button>
 										</figure>
 										<figcaption>
 											<h3>Peaceful Enlightment</h3>
@@ -497,10 +576,8 @@
 									<div class="product-item">
 										<figure class="product-style">
 											<img src="images/tab-item3.jpg" alt="Books" class="product-item">
-											<button type="button" class="add-to-cart"
-												data-product-tile="add-to-cart">Read 
-												More
-											</button>
+											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+												Cart</button>
 										</figure>
 										<figcaption>
 											<h3>Great travel at desert</h3>
@@ -514,10 +591,8 @@
 									<div class="product-item">
 										<figure class="product-style">
 											<img src="images/tab-item5.jpg" alt="Books" class="product-item">
-											<button type="button" class="add-to-cart"
-												data-product-tile="add-to-cart">Read 
-												More
-											</button>
+											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+												Cart</button>
 										</figure>
 										<figcaption>
 											<h3>Life among the pirates</h3>
@@ -531,10 +606,8 @@
 									<div class="product-item">
 										<figure class="product-style">
 											<img src="images/tab-item7.jpg" alt="Books" class="product-item">
-											<button type="button" class="add-to-cart"
-												data-product-tile="add-to-cart">Read 
-												More
-											</button>
+											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+												Cart</button>
 										</figure>
 										<figcaption>
 											<h3>Simple way of piece life</h3>
@@ -552,10 +625,8 @@
 									<div class="product-item">
 										<figure class="product-style">
 											<img src="images/tab-item1.jpg" alt="Books" class="product-item">
-											<button type="button" class="add-to-cart"
-												data-product-tile="add-to-cart">Read 
-												More
-											</button>
+											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+												Cart</button>
 										</figure>
 										<figcaption>
 											<h3>Peaceful Enlightment</h3>
@@ -569,10 +640,8 @@
 									<div class="product-item">
 										<figure class="product-style">
 											<img src="images/tab-item3.jpg" alt="Books" class="product-item">
-											<button type="button" class="add-to-cart"
-												data-product-tile="add-to-cart">Read 
-												More
-											</button>
+											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+												Cart</button>
 										</figure>
 										<figcaption>
 											<h3>Great travel at desert</h3>
@@ -586,10 +655,8 @@
 									<div class="product-item">
 										<figure class="product-style">
 											<img src="images/tab-item5.jpg" alt="Books" class="product-item">
-											<button type="button" class="add-to-cart"
-												data-product-tile="add-to-cart">Read 
-												More
-											</button>
+											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+												Cart</button>
 										</figure>
 										<figcaption>
 											<h3>Life among the pirates</h3>
@@ -603,10 +670,8 @@
 									<div class="product-item">
 										<figure class="product-style">
 											<img src="images/tab-item7.jpg" alt="Books" class="product-item">
-											<button type="button" class="add-to-cart"
-												data-product-tile="add-to-cart">Read 
-												More
-											</button>
+											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+												Cart</button>
 										</figure>
 										<figcaption>
 											<h3>Simple way of piece life</h3>
@@ -624,10 +689,8 @@
 									<div class="product-item">
 										<figure class="product-style">
 											<img src="images/tab-item5.jpg" alt="Books" class="product-item">
-											<button type="button" class="add-to-cart"
-												data-product-tile="add-to-cart">Read 
-												More
-											</button>
+											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+												Cart</button>
 										</figure>
 										<figcaption>
 											<h3>Life among the pirates</h3>
@@ -641,10 +704,8 @@
 									<div class="product-item">
 										<figure class="product-style">
 											<img src="images/tab-item7.jpg" alt="Books" class="product-item">
-											<button type="button" class="add-to-cart"
-												data-product-tile="add-to-cart">Read 
-												More
-											</button>
+											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+												Cart</button>
 										</figure>
 										<figcaption>
 											<h3>Simple way of piece life</h3>
@@ -662,10 +723,8 @@
 									<div class="product-item">
 										<figure class="product-style">
 											<img src="images/tab-item5.jpg" alt="Books" class="product-item">
-											<button type="button" class="add-to-cart"
-												data-product-tile="add-to-cart">Read 
-												More
-											</button>
+											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+												Cart</button>
 										</figure>
 										<figcaption>
 											<h3>Life among the pirates</h3>
@@ -679,9 +738,8 @@
 									<div class="product-item">
 										<figure class="product-style">
 											<img src="images/tab-item7.jpg" alt="Books" class="product-item">
-											<button type="button" class="add-to-cart"
-												data-product-tile="add-to-cart">Read 
-												More</button>
+											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+												Cart</button>
 										</figure>
 										<figcaption>
 											<h3>Simple way of piece life</h3>
@@ -729,9 +787,8 @@
 							<div class="product-item">
 								<figure class="product-style">
 									<img src="images/product-item5.jpg" alt="Books" class="product-item">
-									<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Read 
-										More
-									</button>
+									<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+										Cart</button>
 								</figure>
 								<figcaption>
 									<h3>Simple way of piece life</h3>
@@ -739,15 +796,14 @@
 									<div class="item-price">
 										<span class="prev-price">$ 50.00</span>$ 40.00
 									</div>
-								</figcaption>
-							</div>
+								</div>
+							</figcaption>
 
 							<div class="product-item">
 								<figure class="product-style">
 									<img src="images/product-item6.jpg" alt="Books" class="product-item">
-									<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Read 
-										More
-									</button>
+									<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+										Cart</button>
 								</figure>
 								<figcaption>
 									<h3>Great travel at desert</h3>
@@ -755,16 +811,14 @@
 									<div class="item-price">
 										<span class="prev-price">$ 30.00</span>$ 38.00
 									</div>
-								</figcaption>
-							</div>
-
+								</div>
+							</figcaption>
 
 							<div class="product-item">
 								<figure class="product-style">
 									<img src="images/product-item7.jpg" alt="Books" class="product-item">
-									<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Read 
-										More
-									</button>
+									<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+										Cart</button>
 								</figure>
 								<figcaption>
 									<h3>The lady beauty Scarlett</h3>
@@ -772,16 +826,14 @@
 									<div class="item-price">
 										<span class="prev-price">$ 35.00</span>$ 45.00
 									</div>
-								</figcaption>
-							</div>
-
+								</div>
+							</figcaption>
 
 							<div class="product-item">
 								<figure class="product-style">
 									<img src="images/product-item8.jpg" alt="Books" class="product-item">
-									<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Read 
-										More
-									</button>
+									<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+										Cart</button>
 								</figure>
 								<figcaption>
 									<h3>Once upon a time</h3>
@@ -789,15 +841,14 @@
 									<div class="item-price">
 										<span class="prev-price">$ 25.00</span>$ 35.00
 									</div>
-								</figcaption>
-							</div>
-
+								</div>
+							</figcaption>
 
 							<div class="product-item">
 								<figure class="product-style">
 									<img src="images/product-item2.jpg" alt="Books" class="product-item">
-									<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Read 
-										More</button>
+									<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+										Cart</button>
 								</figure>
 								<figcaption>
 									<h3>Simple way of piece life</h3>
@@ -812,6 +863,206 @@
 		</div>
 	</section>
 
+	<section id="subscribe">
+		<div class="container">
+			<div class="row justify-content-center">
+
+				<div class="col-md-8">
+					<div class="row">
+
+						<div class="col-md-6">
+
+							<div class="title-element">
+								<h2 class="section-title divider">Subscribe to our newsletter</h2>
+							</div>
+
+						</div>
+						<div class="col-md-6">
+
+							<div class="subscribe-content" data-aos="fade-up">
+								<p>Sed eu feugiat amet, libero ipsum enim pharetra hac dolor sit amet, consectetur. Elit
+									adipiscing enim pharetra hac.</p>
+								<form id="form">
+									<input type="text" name="email" placeholder="Enter your email addresss here">
+									<button class="btn-subscribe">
+										<span>send</span>
+										<i class="icon icon-send"></i>
+									</button>
+								</form>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<section id="latest-blog" class="py-5 my-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+
+					<div class="section-header align-center">
+						<div class="title">
+							<span>Read our articles</span>
+						</div>
+						<h2 class="section-title">Latest Articles</h2>
+					</div>
+
+					<div class="row">
+
+						<div class="col-md-4">
+
+							<article class="column" data-aos="fade-up">
+
+								<figure>
+									<a href="#" class="image-hvr-effect">
+										<img src="images/post-img1.jpg" alt="post" class="post-image">
+									</a>
+								</figure>
+
+								<div class="post-item">
+									<div class="meta-date">Mar 30, 2021</div>
+									<h3><a href="#">Reading books always makes the moments happy</a></h3>
+
+									<div class="links-element">
+										<div class="categories">inspiration</div>
+										<div class="social-links">
+											<ul>
+												<li>
+													<a href="#"><i class="icon icon-facebook"></i></a>
+												</li>
+												<li>
+													<a href="#"><i class="icon icon-twitter"></i></a>
+												</li>
+												<li>
+													<a href="#"><i class="icon icon-behance-square"></i></a>
+												</li>
+											</ul>
+										</div>
+									</div><!--links-element-->
+
+								</div>
+							</article>
+
+						</div>
+						<div class="col-md-4">
+
+							<article class="column" data-aos="fade-up" data-aos-delay="200">
+								<figure>
+									<a href="#" class="image-hvr-effect">
+										<img src="images/post-img2.jpg" alt="post" class="post-image">
+									</a>
+								</figure>
+								<div class="post-item">
+									<div class="meta-date">Mar 29, 2021</div>
+									<h3><a href="#">Reading books always makes the moments happy</a></h3>
+
+									<div class="links-element">
+										<div class="categories">inspiration</div>
+										<div class="social-links">
+											<ul>
+												<li>
+													<a href="#"><i class="icon icon-facebook"></i></a>
+												</li>
+												<li>
+													<a href="#"><i class="icon icon-twitter"></i></a>
+												</li>
+												<li>
+													<a href="#"><i class="icon icon-behance-square"></i></a>
+												</li>
+											</ul>
+										</div>
+									</div><!--links-element-->
+
+								</div>
+							</article>
+
+						</div>
+						<div class="col-md-4">
+
+							<article class="column" data-aos="fade-up" data-aos-delay="400">
+								<figure>
+									<a href="#" class="image-hvr-effect">
+										<img src="images/post-img3.jpg" alt="post" class="post-image">
+									</a>
+								</figure>
+								<div class="post-item">
+									<div class="meta-date">Feb 27, 2021</div>
+									<h3><a href="#">Reading books always makes the moments happy</a></h3>
+
+									<div class="links-element">
+										<div class="categories">inspiration</div>
+										<div class="social-links">
+											<ul>
+												<li>
+													<a href="#"><i class="icon icon-facebook"></i></a>
+												</li>
+												<li>
+													<a href="#"><i class="icon icon-twitter"></i></a>
+												</li>
+												<li>
+													<a href="#"><i class="icon icon-behance-square"></i></a>
+												</li>
+											</ul>
+										</div>
+									</div><!--links-element-->
+
+								</div>
+							</article>
+
+						</div>
+
+					</div>
+
+					<div class="row">
+
+						<div class="btn-wrap align-center">
+							<a href="#" class="btn btn-outline-accent btn-accent-arrow" tabindex="0">Read All Articles<i
+									class="icon icon-ns-arrow-right"></i></a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="download-app" class="leaf-pattern-overlay">
+		<div class="corner-pattern-overlay"></div>
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-8">
+					<div class="row">
+
+						<div class="col-md-5">
+							<figure>
+								<img src="images/device.png" alt="phone" class="single-image">
+							</figure>
+						</div>
+
+						<div class="col-md-7">
+							<div class="app-info">
+								<h2 class="section-title divider">Download our app now !</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis sed ptibus
+									liberolectus nonet psryroin. Amet sed lorem posuere sit iaculis amet, ac urna.
+									Adipiscing fames semper erat ac in suspendisse iaculis.</p>
+								<div class="google-app">
+									<img src="images/google-play.jpg" alt="google play">
+									<img src="images/app-store.jpg" alt="app store">
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
 	<footer id="footer">
 		<div class="container">
 			<div class="row">
@@ -820,7 +1071,7 @@
 
 					<div class="footer-item">
 						<div class="company-brand">
-							<img src="images/bookstrap-logo.png" alt="logo" class="footer-logo">
+							<img src="images/main-logo.png" alt="logo" class="footer-logo">
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis sed ptibus liberolectus
 								nonet psryroin. Amet sed lorem posuere sit iaculis amet, ac urna. Adipiscing fames
 								semper erat ac in suspendisse iaculis.</p>
@@ -835,19 +1086,19 @@
 						<h5>About Us</h5>
 						<ul class="menu-list">
 							<li class="menu-item">
-								<a href="#">Vision</a>
+								<a href="#">vision</a>
 							</li>
 							<li class="menu-item">
-								<a href="#">Articles </a>
+								<a href="#">articles </a>
 							</li>
 							<li class="menu-item">
-								<a href="#">Careers</a>
+								<a href="#">careers</a>
 							</li>
 							<li class="menu-item">
-								<a href="#">Service Terms</a>
+								<a href="#">service terms</a>
 							</li>
 							<li class="menu-item">
-								<a href="#">Donate</a>
+								<a href="#">donate</a>
 							</li>
 						</ul>
 					</div>
@@ -943,7 +1194,16 @@
 								<div class="social-links align-right">
 									<ul>
 										<li>
-											<a href="#"><i class="icon icon-github"></i></a>
+											<a href="#"><i class="icon icon-facebook"></i></a>
+										</li>
+										<li>
+											<a href="#"><i class="icon icon-twitter"></i></a>
+										</li>
+										<li>
+											<a href="#"><i class="icon icon-youtube-play"></i></a>
+										</li>
+										<li>
+											<a href="#"><i class="icon icon-behance-square"></i></a>
 										</li>
 									</ul>
 								</div>
@@ -957,266 +1217,12 @@
 		</div>
 	</div>
 
-	<!-- Bootstrap Modal -->
-	<div class="modal fade" id="bookModal" tabindex="-1" aria-labelledby="bookModalLabel" aria-hidden="true">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h5 class="modal-title" id="bookModalLabel"></h5>
-					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-				</div>
-				<div class="modal-body">
-					<img id="modal-image" src="" alt="" class="img-fluid mb-3">
-					<p id="modal-author"></p>
-					<p id="modal-title"></p>
-					<p id="modal-price"></p>
-					<p id="modal-description"></p>
-					<p id="modal-book_id"></p>
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-primary" id="addToCartBtn" data-book_id="${book.book_id}">Add to Cart</button>
-					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	 <script src="js/jquery-1.11.0.min.js"></script>
-	 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+	<script src="js/jquery-1.11.0.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
 		crossorigin="anonymous"></script>
-	 <script src="js/plugins.js"></script>
-	 <script src="js/script.js"></script>
-
-	 <script>
-		let currentBookId = null;  // Track the current book ID globally
-
-		// Function to handle adding a book to the cart
-		async function addToCart(book_id) {
-			try {
-				const response = await fetch('/ebookstore_project/cart', {
-					method: 'POST',
-					headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-					body: `book_id=${book_id}` // Send book_id as form data
-				});
-
-				const responseText = await response.text();
-				console.log("Raw response:", responseText);
-
-				if (responseText.includes("success")) {
-					alert('Book added to cart successfully!');
-				} else {
-					alert('Failed to add book to cart. Please try again.');
-				}
-			} catch (error) {
-				console.error('Error adding book to cart:', error);
-				alert('Error adding book to cart. Please try again.');
-			}
-		}
-
-		// Event listener for the "Add to Cart" button
-		document.getElementById('addToCartBtn').addEventListener('click', function () {
-			if (currentBookId) {
-				addToCart(currentBookId); // Use the global book_id
-			} else {
-				console.error("Invalid book_id:", currentBookId);
-			}
-		});
-
-		// Function to load book details into the modal
-		async function loadBooks() {
-			try {
-				const response = await fetch('/ebookstore_project/query');  // Fetch book data from QueryServlet
-				const books = await response.json();
-
-				const bookContainer = document.querySelector('.product-list .row');
-				bookContainer.innerHTML = ""; // Clear old content
-
-				books.forEach(book => {
-					const bookHTML = `
-						<div class="col-md-3">
-							<div class="product-item"
-								data-title="${book.title}"
-								data-author="${book.author}"
-								data-price="$${book.price.toFixed(2)}"
-								data-image="${book.image}"
-								data-quantity="${book.quantity}"
-								data-description="${book.description}"
-								data-book_id="${book.book_id}">
-								<figure class="product-style">
-									<img src="${book.image}" alt="${book.title}" class="product-item">
-									<button type="button" class="read-more"
-											data-bs-toggle="modal" data-bs-target="#bookModal" 
-											data-title="${book.title}"
-											data-author="${book.author}"
-											data-price="${book.price.toFixed(2)}"
-											data-image="${book.image}"
-											data-description="${book.description}"
-											data-book_id="${book.book_id}">Read More</button>
-								</figure>
-								<figcaption>
-									<h3>${book.title}</h3>
-									<span>${book.author}</span>
-									<div class="item-price">$${book.price.toFixed(2)}</div>
-									<span>Stock: ${book.quantity}</span>
-								</figcaption>
-							</div>
-						</div>
-					`;
-					bookContainer.innerHTML += bookHTML;
-				});
-
-				// Attach the modal data when the 'Read More' button is clicked
-				const modal = document.getElementById('bookModal');
-				modal.addEventListener('show.bs.modal', function (event) {
-					const button = event.relatedTarget; // Button that triggered the modal
-					const book_id = button.getAttribute('data-book_id');
-					const title = button.getAttribute('data-title');
-					const author = button.getAttribute('data-author');
-					const price = button.getAttribute('data-price');
-					const image = button.getAttribute('data-image');
-					const description = button.getAttribute('data-description');
-
-					// Store the current book ID globally
-					currentBookId = book_id;
-
-					// Populate the modal with book data
-					document.getElementById('bookModalLabel').textContent = title; // Set the modal title
-					document.getElementById('modal-author').textContent = `Author: ${author}`;
-					document.getElementById('modal-title').textContent = `Book Title: ${title}`;
-					document.getElementById('modal-price').textContent = `Price: $${price}`;
-					document.getElementById('modal-description').textContent = `Description: ${description}`;
-					document.getElementById('modal-book_id').textContent = `Book ID: ${book_id}`;
-					document.getElementById('modal-image').setAttribute('src', image); // Set the image source
-				});
-			} catch (error) {
-				console.error("Error loading books:", error);
-			}
-		}
-
-		// Call loadBooks when the page is fully loaded
-		jQuery(document).ready(function () {
-			loadBooks();
-		});
-
-
-		// Function to load book details into the modal
-		async function loadBillboardBooks() {
-			try {
-				const response = await fetch('/ebookstore_project/query');  // Fetch book data from QueryServlet
-				const books = await response.json();
-
-				const bookContainer = document.querySelector('.main-slider');
-				bookContainer.innerHTML = ""; // Clear old content
-
-				books.forEach(book => {
-					const bookHTML = `
-						<div class="slider-item">
-
-							<div class="banner-content product-item" 
-								data-title="${book.title}"
-								data-author="${book.author}"
-								data-price="$${book.price.toFixed(2)}"
-								data-image="${book.image}"
-								data-description="${book.description}">
-									<h2 class="banner-title">${book.title}</h2>
-									<p>${book.description}</p>
-									<div class="btn-wrap" data-bs-toggle="modal" data-bs-target="#bookModal">
-										<a href="#" class="btn btn-outline-accent btn-accent-arrow" data-bs-toggle="modal" data-bs-target="#bookModal" 
-											data-title="${book.title}"
-											data-author="${book.author}"
-											data-price="${book.price.toFixed(2)}"
-											data-image="${book.image}"
-											data-description="${book.description}"
-											data-book_id="${book.book_id}">Read More<i
-													class="icon icon-ns-arrow-right"></i></a>
-									</div>
-							</div><!--banner-content-->
-							<img src="${book.image}" alt="banner" class="banner-image" style="width: 100%; max-width: 400px; height: 600px; object-fit: cover; border-radius: 10px;">
-
-						</div><!--slider-item-->
-					`;
-					bookContainer.innerHTML += bookHTML;
-				});
-
-				// 🔹 Reinitialize Slick.js after dynamically adding books
-				setTimeout(() => {
-					$(".main-slider").slick('unslick'); // Destroy existing instance if needed
-					$(".main-slider").slick({
-						arrows: true,
-						dots: true,
-						infinite: true,
-						slidesToShow: 1,
-						slidesToScroll: 1
-					});
-				}, 300); // Small delay to ensure elements are loaded
-
-				// Attach the modal data when the 'Read More' button is clicked
-				const modal = document.getElementById('bookModal');
-				modal.addEventListener('show.bs.modal', function (event) {
-					const button = event.relatedTarget; // Button that triggered the modal
-					const book_id = button.getAttribute('data-book_id');
-					const title = button.getAttribute('data-title');
-					const author = button.getAttribute('data-author');
-					const price = button.getAttribute('data-price');
-					const image = button.getAttribute('data-image');
-					const description = button.getAttribute('data-description');
-
-					// Store the current book ID globally
-					currentBookId = book_id;
-
-					// Populate the modal with book data
-					document.getElementById('bookModalLabel').textContent = title; // Set the modal title
-					document.getElementById('modal-author').textContent = `Author: ${author}`;
-					document.getElementById('modal-title').textContent = `Book Title: ${title}`;
-					document.getElementById('modal-price').textContent = `Price: $${price}`;
-					document.getElementById('modal-description').textContent = `Description: ${description}`;
-					document.getElementById('modal-book_id').textContent = `Book ID: ${book_id}`;
-					document.getElementById('modal-image').setAttribute('src', image); // Set the image source
-				});
-			} catch (error) {
-				console.error("Error loading books:", error);
-			}
-		}
-
-		// Call loadBillboardBooks when the page is fully loaded
-		jQuery(document).ready(function () {
-			loadBillboardBooks();
-		});
-
-	</script>
-
-	
-
-	<script>
-		async function displayUserData() {
-			// Fetch user data from GetSessionDataServlet
-			const response = await fetch('/ebookstore_project/getSessionData');
-			const data = await response.json();
-
-			if (data.userEmail && data.userName && data.userId) {
-				// Store user data in sessionStorage
-				sessionStorage.setItem('userEmail', data.userEmail);
-				sessionStorage.setItem('userName', data.userName);
-				sessionStorage.setItem('userId', data.userId);
-				sessionStorage.setItem('phone_number', data.phone_number);
-				sessionStorage.setItem('wallet_balance', data.wallet_balance);
-
-				// Display user data in the HTML
-				//document.getElementById("userEmail").innerText = "Email: " + data.userEmail;
-				document.getElementById("userName").innerText = "Welcome " + data.userName +"!";
-				//document.getElementById("userId").innerText = "User ID: " + data.userId;
-			} else {
-				document.getElementById("userInfo").innerText = "No user data found.";
-			}
-		}
-
-		// Call this function to display the user data when the page loads
-		window.onload = displayUserData;
-
-	</script>
-
-	
+	<script src="js/plugins.js"></script>
+	<script src="js/script.js"></script>
 
 </body>
 
