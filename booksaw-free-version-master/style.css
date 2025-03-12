@@ -163,10 +163,10 @@ a {
 
 .btn-primary {
   --bs-btn-color: #fff;
-  --bs-btn-bg: var(--bs-primary);
+  --bs-btn-bg: var(--accent-color);
   --bs-btn-border-color: var(--bs-primary);
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: var(--bs-primary-dark);
+  --bs-btn-hover-bg: var(--choc-color);
   --bs-btn-hover-border-color: var(--bs-primary-dark);
   --bs-btn-focus-shadow-rgb: 49, 132, 253;
   --bs-btn-active-color: #fff;
@@ -839,6 +839,7 @@ hr {
   border-top: 1px solid #E1E1E1;
 }
 
+
 /*--------------------------------------------------------------
 /** 2.10 Buttons
 --------------------------------------------------------------*/
@@ -1118,7 +1119,6 @@ fieldset[disabled] a.btn {
   text-align: right;
   display: block;
 }
-
 
 /*====================================================================*/
 /* 5. CONTENT ELEMENTS */
@@ -2174,6 +2174,19 @@ span.prev-price {
   padding-right:0 !important;
 }
 
+.modal-content {
+  background-color: var(--light-color);
+  color: var(--dark-text-color);
+}
+
+.modal-title {
+  text-transform: capitalize;
+}
+
+.modal-body p {
+  margin-top: 15px;
+}
+
 /*----- Footer Section
 --------------------------------------------------------------*/
 footer#footer {
@@ -2291,4 +2304,80 @@ footer#footer {
 .product-item .item-price {
   color: #c88a8a;
   font-size: 1.3em;
+}
+
+/* ------------------
+Cart page 
+--------------------*/
+
+/*
+Continue shopping
+*/
+
+.shop {
+  padding-right: 20px;
+}
+
+.shop i.icon {
+  font-size: 9px;
+}
+
+.shop:hover {
+  color: var(--accent-color);
+}
+
+/*
+List of cart items
+*/
+
+#cart-items h2,p {
+  padding: 0 24px;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.cart-image {
+  width: 80px;
+  height: auto;
+  margin-right: 15px;
+}
+
+.cart-details {
+  flex-grow: 1;
+}
+
+.cart-actions {
+  display: flex;
+  align-items: center;
+}
+
+.cart-checkout {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.quantity-btn span {
+  margin: 0 10px;
+}
+
+.remove-btn {
+  margin-top: 10px;
+}
+
+.checkout-btn {
+  margin: 0 24px;
+}
+
+.cart-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Ensures even spacing */
+  width: 100px; /* Adjust as needed */
 }
