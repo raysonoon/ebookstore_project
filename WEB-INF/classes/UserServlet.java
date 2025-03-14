@@ -55,7 +55,7 @@ public class UserServlet extends HttpServlet {
                             + "}");
 
                     // Optionally, redirect to another page after processing
-                    response.sendRedirect("booksaw-free-version-master/index.html");
+                    response.sendRedirect("index.html");
                 } else {
                     // Handle case if user not found in the database
                     out.print("{\"error\": \"User not found\"}");
@@ -88,7 +88,7 @@ public class UserServlet extends HttpServlet {
                 // Connect to the database
                 Connection conn = DriverManager.getConnection(
                         "jdbc:mysql://localhost:3306/ebookshop?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC",
-                        "myuser", "xxxx"); // Replace with your DB username and password
+                        "myuser", "xxxx"); 
 
                 PreparedStatement pstmt = conn.prepareStatement(
                         "UPDATE users SET username = ?, phone_number = ?, wallet_balance = ? WHERE email = ?")
