@@ -503,7 +503,11 @@ h6 a {
 }
 
 p {
-  margin: 0 0 20px 0;
+  margin: 0 0 15px 0;
+}
+
+span {
+  margin: 0 0 15px 0;
 }
 
 p:empty {
@@ -1532,6 +1536,10 @@ button {
   opacity: 0.5;
 }
 
+.btn-danger {
+  width: 25%;
+}
+
 /*--- Image hover Effect
 -----------------------------------------------*/
 .image-hvr-effect {
@@ -2342,9 +2350,8 @@ footer#footer {
 }
 
 .account-go-back-btn {
-  position: absolute;
-  top: 10px;
-  left: 10px;
+  position: relative;
+  margin-left: 15px;
   font-size: 12px;
   background-color: #000000;
   color: white;
@@ -2352,6 +2359,7 @@ footer#footer {
   padding: 10px 20px;
   cursor: pointer;
   border-radius: 5px;
+  margin-right: 10px;
 }
 
 .account-go-back-btn:hover {
@@ -2359,7 +2367,6 @@ footer#footer {
 }
 
 .btn-success {
-    all: unset;  /* Resets Bootstrap styling */
     background-color: green !important;
     border-color: green !important;
     color: white !important;

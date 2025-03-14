@@ -20,7 +20,7 @@
 
         <div class="d-flex justify-content-between">
             <h3>Total: $<span id="total-price">0.00</span></h3>
-            <button class="btn btn-success" onclick="proceedToCheckout()">Proceed to Checkout</button>
+            <button class="btn btn-success btn-md" onclick="proceedToCheckout()">PROCEED TO CHECKOUT</button>
         </div>
     </div>
 
@@ -51,36 +51,32 @@
                           totalPrice += itemPrice;
   
                           cartItemsHTML += `
-                            <div class="card mb-3" style="max-width: 1000px; height: 400px; margin: 0 auto;">
-                                <div class="row g-0" style="height: 100%;">
-                                    <!-- Image on the left side -->
-                                    <div class="col-md-3">
-                                        <img src="${item.image_url}" class="img-fluid rounded-start" alt="${item.title}" style="height: 100%; object-fit: cover;">
-                                    </div>
-                                    
-                                    <!-- Book details on the right side aligned to the right -->
-                                    <div class="col-md-9 d-flex flex-column">
-                                        <div class="card-body d-flex flex-column justify-content-between" style="height: 100%; text-align: right;">
-                                            <div>
-                                                <h5 class="card-title">${item.title}</h5>
-                                                <p class="card-text">Author: ${item.author}</p>
-                                                <p class="card-text">Price: $${item.price.toFixed(2)}</p>
-                                                <p class="card-text">Quantity: ${item.quantity}</p>
-												<div class="btn btn-rounded btn-outline-accent quantity-btn">-</div>
-												<span>${item.quantity}</span>
-												<div class="btn btn-rounded btn-outline-accent quantity-btn">+</div>
-                                                <p class="card-text">Total: $${itemPrice.toFixed(2)}</p>
-                                            </div>
+							<div class="card mb-3" style="max-width: 1000px; height: 400px; margin: 0 auto;" data-book-id="${item.bookId}">
+								<div class="row g-0 flex-nowrap" style="height: 100%;">
+									<!-- Image on the left side -->
+									<div class="col-md-3">
+										<img src="${item.image_url}" class="img-fluid rounded-start" alt="${item.title}" style="height: 100%; object-fit: cover;">
+									</div>
 
-                                            <!-- Remove button at the bottom-right corner -->
-                                            <div class="d-flex justify-content-end mt-auto">
-                                                <button class="btn btn-danger btn-sm" onclick="removeFromCart(${item.bookId})">Remove</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        `;
+									<!-- Book details on the right side aligned to the right -->
+									<div class="col-md-9 d-flex flex-column">
+										<div class="card-body d-flex flex-column align-items-end justify-content-between" style="height: 100%; text-align: right;">
+												<h4 class="card-title">${item.title}</h4>
+													<div class="card-text">Author: ${item.author}</div>
+													<div class="card-text">Price: $${item.price.toFixed(2)}</div>
+													<div class="quantity-btn">
+														<div class="btn btn-rounded btn-outline-accent quantity-btn minus-btn">-</div>
+														<span class="card-text quantity-value">${item.quantity}</span>
+														<div class="btn btn-rounded btn-outline-accent quantity-btn plus-btn">+</div>
+													</div>
+													<div class="card-text">Total: $${itemPrice.toFixed(2)}</div>
+												<!-- Remove button at the bottom-right corner -->
+												<button class="btn btn-danger btn-sm" onclick="removeFromCart(${item.bookId})">Remove</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						`;
 
                       });
   
@@ -120,6 +116,67 @@
               alert("There was an error removing the item. Please try again.");
           }
       }
+
+	  document.addEventListener('DOMContentLoaded', function() {
+			// Event listener for both "minus" and "plus" buttons
+			document.getElementById('cart-items').addEventListener('click', function(event) {
+				if (event.target.classList.contains('minus-btn') || event.target.classList.contains('plus-btn')) {
+					// Find the closest card (the container for each book)
+					const cartItem = event.target.closest('.card');
+
+					// Ensure that the card element has the correct bookId data attribute
+					const bookId = cartItem ? cartItem.dataset.bookId : null; // Get the bookId from the dataset attribute
+
+					// Log the bookId to ensure it's being retrieved correctly
+					console.log("Book ID:", bookId);
+
+					// Check if the bookId is found, if not, log the issue
+					if (!bookId) {
+						console.error('Error: Book ID not found!');
+						return;
+					}
+
+					// Update quantity
+					const quantitySpan = cartItem.querySelector('.quantity-value');
+					let currentQuantity = parseInt(quantitySpan.innerText);
+
+					// Adjust quantity based on button clicked
+					if (event.target.classList.contains('plus-btn')) {
+						currentQuantity++;
+					} else if (event.target.classList.contains('minus-btn') && currentQuantity > 1) {
+						currentQuantity--;
+					}
+
+					// Update the quantity on the frontend
+					quantitySpan.innerText = currentQuantity;
+
+					// Send the updated quantity to the backend
+					updateQuantityInCart(bookId, currentQuantity);
+				}
+			});
+	    });
+
+	async function updateQuantityInCart(bookId, newQuantity) {
+		try {
+			// Send quantity as a URL parameter
+			const response = await fetch(`/ebookstore_project/cart/update/${bookId}?quantity=${newQuantity}`, {
+				method: 'POST',  // POST method
+				headers: {
+					'Content-Type': 'application/x-www-form-urlencoded',  // Use 'application/x-www-form-urlencoded' for URL parameters
+				},
+			});
+
+			if (!response.ok) {
+				throw new Error("Failed to update quantity");
+			}
+
+			// Optionally, you can also re-fetch the entire cart to update the UI (if needed)
+			await fetchCartData(); // This will update the cart display
+		} catch (error) {
+			console.error("Error updating quantity:", error);
+		}
+	}
+
 
       async function proceedToCheckout() {
         try {

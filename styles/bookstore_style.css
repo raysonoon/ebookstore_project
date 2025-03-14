@@ -2181,6 +2181,7 @@ span.prev-price {
 
 .modal-title {
   text-transform: capitalize;
+  color: #000;
 }
 
 .modal-body p {
@@ -2247,6 +2248,8 @@ footer#footer {
 .product-style {
   position: relative;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 .slick-slider .product-style {
