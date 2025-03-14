@@ -71,7 +71,7 @@ Version: 1.1
   --bs-primary-dark: #C5A992;
   --bs-secondary: #C5A992;
   --bs-black: #111;
-  --bs-light: #ffffff;
+  --bs-light: #eeedeb;
   --bs-dark: #212529;
   --bs-gray: #949494;
   --bs-gray-dark: #51565b;
@@ -163,10 +163,10 @@ a {
 
 .btn-primary {
   --bs-btn-color: #fff;
-  --bs-btn-bg: var(--bs-primary);
+  --bs-btn-bg: var(--accent-color);
   --bs-btn-border-color: var(--bs-primary);
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: var(--bs-primary-dark);
+  --bs-btn-hover-bg: var(--choc-color);
   --bs-btn-hover-border-color: var(--bs-primary-dark);
   --bs-btn-focus-shadow-rgb: 49, 132, 253;
   --bs-btn-active-color: #fff;
@@ -387,7 +387,7 @@ img {
   display: inline-block;
   border: 0;
   max-width: 100%;
-  height: 100px;
+  height: auto;
   vertical-align: middle;
 }
 
@@ -475,7 +475,7 @@ h3,
 
 h4,
 .h4 {
-  font-size: 1.1em;
+  font-size: 1.3em;
   line-height: 1.4;
 }
 
@@ -839,6 +839,7 @@ hr {
   border-top: 1px solid #E1E1E1;
 }
 
+
 /*--------------------------------------------------------------
 /** 2.10 Buttons
 --------------------------------------------------------------*/
@@ -1119,7 +1120,6 @@ fieldset[disabled] a.btn {
   display: block;
 }
 
-
 /*====================================================================*/
 /* 5. CONTENT ELEMENTS */
 /*====================================================================*/
@@ -1164,7 +1164,7 @@ fieldset[disabled] a.btn {
 }
 
 .nav-tabs .nav-link {
-  color: #ffffff;
+  color: #999;
   padding: 10px 30px;
   margin-bottom: -1px;
   background: none;
@@ -1187,7 +1187,7 @@ fieldset[disabled] a.btn {
 
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
-  color: #ffffff;
+  color: #495057;
   border-color: #dee2e6 #dee2e6 #f3f2ec;
   --bs-nav-tabs-link-active-bg: transparent;
 }
@@ -2174,6 +2174,19 @@ span.prev-price {
   padding-right:0 !important;
 }
 
+.modal-content {
+  background-color: var(--light-color);
+  color: var(--dark-text-color);
+}
+
+.modal-title {
+  text-transform: capitalize;
+}
+
+.modal-body p {
+  margin-top: 15px;
+}
+
 /*----- Footer Section
 --------------------------------------------------------------*/
 footer#footer {
@@ -2293,60 +2306,92 @@ footer#footer {
   font-size: 1.3em;
 }
 
-@media screen and (max-width: 768px) {
-  .products-grid .product-item {
-    width: 45%;
-  }
+/* ------------------
+Cart page 
+--------------------*/
 
-  .product-style img.product-item {
-    /*height: 550px;*/
-    object-fit: contain;
-    margin: 0 auto;
-  }
+/*
+Continue shopping
+*/
 
-  .products-grid.col-3 .product-style,
-  .products-grid.col-4 .product-style,
-  .products-grid.col-5 .product-style {
-    width: 100%;
-  }
+.shop {
+  padding-right: 20px;
 }
 
-@media screen and (max-width: 575px) {
-  .products-grid .product-style {
-    width: 100%;
-  }
+.shop i.icon {
+  font-size: 9px;
 }
 
-.product-style img {
-  width: 100%;      /* Ensure the image fills its container */
-  height: 500px;    /* Set a fixed height for all images */
-  object-fit: cover; /* This will ensure the image covers the area without distortion */
+.shop:hover {
+  color: var(--accent-color);
 }
 
-#userName {
-  margin-right: 50px; /* Adjust the gap value as needed */
+/*
+List of cart items
+*/
+
+#cart-items h2,p {
+  padding: 0 24px;
 }
 
-.account-go-back-btn {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  font-size: 12px;
-  background-color: #000000;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  border-radius: 5px;
+.cart-item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+  margin: 0 300px;
 }
 
-.account-go-back-btn:hover {
-  background-color: #373a3e;
+.cart-item .container-left {
+  display: flex; 
 }
 
-.btn-success {
-    all: unset;  /* Resets Bootstrap styling */
-    background-color: green !important;
-    border-color: green !important;
-    color: white !important;
+.cart-item .container-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.cart-details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.cart-image {
+  width: 180px;
+  height: auto;
+  margin-right: 15px;
+}
+
+.cart-actions {
+  display: flex;
+  align-items: center;
+}
+
+.cart-checkout {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.quantity-btn span {
+  margin: 0 10px;
+}
+
+.remove-btn {
+  margin-top: 10px;
+}
+
+.checkout-btn {
+  margin: 0 24px;
+}
+
+.cart-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Ensures even spacing */
+  width: 100px; /* Adjust as needed */
 }
