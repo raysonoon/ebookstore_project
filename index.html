@@ -24,89 +24,55 @@
 
 <body data-bs-spy="scroll" data-bs-target="#header" tabindex="0">
 
-	<div id="header-wrap">
+	<header id="header">
+		<div class="container-fluid">
+			<div class="row align-items-center">
+				<div class="col-md-2">
+					<div class="main-logo">			
+						<a href="index.html"><img src="images/bookstrap-logo.png" alt="logo"></a>
+					</div>
 
-		<div class="top-content">
-			<div class="container-fluid">
-				<div class="row align-items-center">
-					<div class="col-md-6">
-						<div class="social-links">
-							<ul>
-								<li>
-									<a href="https://github.com/raysonoon/ebookstore_project"><i
-											class="icon icon-github"></i></a>
+				</div>
+				<div class="col-md-10">
+
+					<nav id="navbar">
+						<div class="main-menu stellarnav">
+							<a id="userName"></a>
+							<ul class="menu-list">
+								<li class="menu-item active"><a href="#home">Home</a></li>
+								<li class="menu-item"><a href="#featured-books" class="nav-link">Featured</a></li>
+								<li class="menu-item" id="userInfo">
+									<!-- Link to Account Page -->
+									<a href="account.html" class="user-account for-buy">
+										<i class="icon icon-user"></i><span>Account</span>
+									</a>
+								</li>
+								<li class="menu-item">
+									<!-- Link to Cart Page -->
+									<a href="cart.html" class="cart for-buy">
+										<i class="icon icon-clipboard"></i><span>Cart: ($0)</span>
+									</a>
+								</li>
+								<li class="menu-item">
+									<a href="https://github.com/raysonoon/ebookstore_project"><i class="icon icon-github"></i>
 								</li>
 							</ul>
-						</div><!--social-links-->
-					</div>
-					<div class="col-md-6" id="userInfo">
-						<div class="right-element">
-							<a id="userName"></a>
-							<!-- Link to Account Page -->
-							<a href="account.html" class="user-account for-buy">
-								<i class="icon icon-user"></i><span>Account</span>
-							</a>
-							<!-- Link to Cart Page -->
-							<a href="cart.html" class="cart for-buy">
-								<i class="icon icon-clipboard"></i><span>Cart: ($0)</span>
-							</a>
-					
-							<div class="action-menu">
-								<div class="search-bar">
-									<a href="#" class="search-button search-toggle" data-selector="#header-wrap">
-										<i class="icon icon-search"></i>
-									</a>
-									<form role="search" method="get" class="search-box">
-										<input class="search-field text search-input" placeholder="Search" type="search">
-									</form>
-								</div>
+
+							<div class="hamburger">
+								<span class="bar"></span>
+								<span class="bar"></span>
+								<span class="bar"></span>
 							</div>
-						</div><!--top-right-->
-					</div>
-					
 
-				</div>
-			</div>
-		</div><!--top-content-->
-
-		<header id="header">
-			<div class="container-fluid">
-				<div class="row">
-
-					<div class="col-md-2">
-						<div class="main-logo">
-							<a href="index.html"><img src="images/bookstrap-logo.png" alt="logo"></a>
 						</div>
-
-					</div>
-
-					<div class="col-md-10">
-
-						<nav id="navbar">
-							<div class="main-menu stellarnav">
-								<ul class="menu-list">
-									<li class="menu-item active"><a href="#home">Home</a></li>
-									<li class="menu-item"><a href="#featured-books" class="nav-link">Featured</a></li>
-									<li class="menu-item"><a href="#popular-books" class="nav-link">Popular</a></li>
-									<li class="menu-item"><a href="#special-offer" class="nav-link">Offer</a></li>
-								</ul>
-
-								<div class="hamburger">
-									<span class="bar"></span>
-									<span class="bar"></span>
-									<span class="bar"></span>
-								</div>
-
-							</div>
-						</nav>
-
-					</div>
+					</nav>
 
 				</div>
-			</div>
-		</header>
 
-	</div><!--header-wrap-->
+			</div>
+		</div>
+	</header>
+
 
 	<section id="billboard">
 
@@ -114,12 +80,12 @@
 			<div class="row">
 				<div class="col-md-12">
 
-					
+
 
 					<div class="main-slider pattern-overlay">
 						<!--<div class="slider-item">-->
 
-							<!-- Books will be dynamically inserted here -->
+						<!-- Books will be dynamically inserted here -->
 
 						<!--</div> slider-item-->
 					</div><!--slider-->
@@ -256,16 +222,13 @@
 							<div class="row">
 
 								<div class="col-md-3">
-									<div class="product-item"
-									data-title="Portrait Photography"
-									data-author="Adam Silber"
-									data-price="$40.00"
-									data-image="images/tab-item1.jpg"
-									data-description="How to take the best selfies.">
+									<div class="product-item" data-title="Portrait Photography"
+										data-author="Adam Silber" data-price="$40.00" data-image="images/tab-item1.jpg"
+										data-description="How to take the best selfies.">
 										<figure class="product-style">
 											<img src="images/tab-item1.jpg" alt="Books" class="product-item">
-											<button type="button" class="add-to-cart"
-												data-product-tile="add-to-cart" data-bs-toggle="modal" data-bs-target="#bookModal">Read 
+											<button type="button" class="add-to-cart" data-product-tile="add-to-cart"
+												data-bs-toggle="modal" data-bs-target="#bookModal">Read
 												More
 											</button>
 										</figure>
@@ -278,16 +241,13 @@
 								</div>
 
 								<div class="col-md-3">
-									<div class="product-item"
-									data-title="Once Upon A Time"
-									data-author="Klien Marry"
-									data-price="$35.00"
-									data-image="images/product-item4.jpg"
-									data-description="A life adventure like never before.">
+									<div class="product-item" data-title="Once Upon A Time" data-author="Klien Marry"
+										data-price="$35.00" data-image="images/product-item4.jpg"
+										data-description="A life adventure like never before.">
 										<figure class="product-style">
 											<img src="images/tab-item2.jpg" alt="Books" class="product-item">
-											<button type="button" class="add-to-cart"
-												data-product-tile="add-to-cart" data-bs-toggle="modal" data-bs-target="#bookModal">Read 
+											<button type="button" class="add-to-cart" data-product-tile="add-to-cart"
+												data-bs-toggle="modal" data-bs-target="#bookModal">Read
 												More
 											</button>
 										</figure>
@@ -300,16 +260,13 @@
 								</div>
 
 								<div class="col-md-3">
-									<div class="product-item"
-									data-title="Tips of Simple Lifestyle"
-									data-author="Bratt Smith"
-									data-price="$40.00"
-									data-image="images/tab-item3.jpg"
-									data-description="Simple life, happy life.">
+									<div class="product-item" data-title="Tips of Simple Lifestyle"
+										data-author="Bratt Smith" data-price="$40.00" data-image="images/tab-item3.jpg"
+										data-description="Simple life, happy life.">
 										<figure class="product-style">
 											<img src="images/tab-item3.jpg" alt="Books" class="product-item">
-											<button type="button" class="add-to-cart"
-												data-product-tile="add-to-cart" data-bs-toggle="modal" data-bs-target="#bookModal">Read 
+											<button type="button" class="add-to-cart" data-product-tile="add-to-cart"
+												data-bs-toggle="modal" data-bs-target="#bookModal">Read
 												More
 											</button>
 										</figure>
@@ -322,16 +279,13 @@
 								</div>
 
 								<div class="col-md-3">
-									<div class="product-item"
-									data-title="Just Felt from Outside"
-									data-author="Nicole Wilson"
-									data-price="$40.00"
-									data-image="images/tab-item4.jpg"
-									data-description="Go out, it's fun!">
+									<div class="product-item" data-title="Just Felt from Outside"
+										data-author="Nicole Wilson" data-price="$40.00"
+										data-image="images/tab-item4.jpg" data-description="Go out, it's fun!">
 										<figure class="product-style">
 											<img src="images/tab-item4.jpg" alt="Books" class="product-item">
-											<button type="button" class="add-to-cart"
-												data-product-tile="add-to-cart" data-bs-toggle="modal" data-bs-target="#bookModal">Read 
+											<button type="button" class="add-to-cart" data-product-tile="add-to-cart"
+												data-bs-toggle="modal" data-bs-target="#bookModal">Read
 												More
 											</button>
 										</figure>
@@ -347,16 +301,13 @@
 							<div class="row">
 
 								<div class="col-md-3">
-									<div class="product-item"
-									data-title="Peaceful Enlightenment"
-									data-author="Marmik Lama"
-									data-price="$40.00"
-									data-image="images/tab-item5.jpg"
-									data-description="Find your peace.">
+									<div class="product-item" data-title="Peaceful Enlightenment"
+										data-author="Marmik Lama" data-price="$40.00" data-image="images/tab-item5.jpg"
+										data-description="Find your peace.">
 										<figure class="product-style">
 											<img src="images/tab-item5.jpg" alt="Books" class="product-item">
-											<button type="button" class="add-to-cart"
-												data-product-tile="add-to-cart" data-bs-toggle="modal" data-bs-target="#bookModal">Read 
+											<button type="button" class="add-to-cart" data-product-tile="add-to-cart"
+												data-bs-toggle="modal" data-bs-target="#bookModal">Read
 												More
 											</button>
 										</figure>
@@ -369,18 +320,16 @@
 								</div>
 
 								<div class="col-md-3">
-									<div class="product-item"
-									data-title="Great Travel At Desert"
-								 	data-author="Sanchit Howdy"
-								 	data-price="$38.00"
-								 	data-image="images/tab-item6.jpg"
-								 	data-description="The desert is great.">
-									<figure class="product-style">
-										<img src="images/tab-item6.jpg" alt="Books" class="product-item">
-										<button type="button" class="add-to-cart" data-product-tile="add-to-cart" data-bs-toggle="modal" data-bs-target="#bookModal">Read
-											More
-										</button>
-									</figure>
+									<div class="product-item" data-title="Great Travel At Desert"
+										data-author="Sanchit Howdy" data-price="$38.00"
+										data-image="images/tab-item6.jpg" data-description="The desert is great.">
+										<figure class="product-style">
+											<img src="images/tab-item6.jpg" alt="Books" class="product-item">
+											<button type="button" class="add-to-cart" data-product-tile="add-to-cart"
+												data-bs-toggle="modal" data-bs-target="#bookModal">Read
+												More
+											</button>
+										</figure>
 										<figcaption>
 											<h3>Great travel at desert</h3>
 											<span>Sanchit Howdy</span>
@@ -390,16 +339,13 @@
 								</div>
 
 								<div class="col-md-3">
-									<div class="product-item"
-									data-title="Life Among the Pirates"
-								 	data-author="Armor Ramsey"
-								 	data-price="$40.00"
-								 	data-image="images/tab-item7.jpg"
-								 	data-description="A fresh take on the sea nomads.">
+									<div class="product-item" data-title="Life Among the Pirates"
+										data-author="Armor Ramsey" data-price="$40.00" data-image="images/tab-item7.jpg"
+										data-description="A fresh take on the sea nomads.">
 										<figure class="product-style">
 											<img src="images/tab-item7.jpg" alt="Books" class="product-item">
-											<button type="button" class="add-to-cart"
-												data-product-tile="add-to-cart" data-bs-toggle="modal" data-bs-target="#bookModal">Read 
+											<button type="button" class="add-to-cart" data-product-tile="add-to-cart"
+												data-bs-toggle="modal" data-bs-target="#bookModal">Read
 												More</button>
 										</figure>
 										<figcaption>
@@ -411,18 +357,16 @@
 								</div>
 
 								<div class="col-md-3">
-									<div class="product-item"
-									data-title="Simple way of piece life"
-								 	data-author="Armor Ramsey"
-								 	data-price="$40.00"
-								 	data-image="images/tab-item8.jpg"
-									data-description="A peaceful way to live a meaningful life.">
-									<figure class="product-style">
-										<img src="images/tab-item8.jpg" alt="Books" class="product-item">
-										<button type="button" class="add-to-cart" data-product-tile="add-to-cart" data-bs-toggle="modal" data-bs-target="#bookModal">Read
-											More
-										</button>
-									</figure>
+									<div class="product-item" data-title="Simple way of piece life"
+										data-author="Armor Ramsey" data-price="$40.00" data-image="images/tab-item8.jpg"
+										data-description="A peaceful way to live a meaningful life.">
+										<figure class="product-style">
+											<img src="images/tab-item8.jpg" alt="Books" class="product-item">
+											<button type="button" class="add-to-cart" data-product-tile="add-to-cart"
+												data-bs-toggle="modal" data-bs-target="#bookModal">Read
+												More
+											</button>
+										</figure>
 										<figcaption>
 											<h3>Simple way of piece life</h3>
 											<span>Armor Ramsey</span>
@@ -437,16 +381,13 @@
 						<div id="business" data-tab-content>
 							<div class="row">
 								<div class="col-md-3">
-									<div class="product-item"
-									data-title="Peaceful Enlightenment"
-									data-author="Marmik Lama"
-									data-price="$40.00"
-									data-image="images/tab-item5.jpg"
-									data-description="Find your peace.">
+									<div class="product-item" data-title="Peaceful Enlightenment"
+										data-author="Marmik Lama" data-price="$40.00" data-image="images/tab-item5.jpg"
+										data-description="Find your peace.">
 										<figure class="product-style">
 											<img src="images/tab-item5.jpg" alt="Books" class="product-item">
-											<button type="button" class="add-to-cart"
-												data-product-tile="add-to-cart" data-bs-toggle="modal" data-bs-target="#bookModal">Read 
+											<button type="button" class="add-to-cart" data-product-tile="add-to-cart"
+												data-bs-toggle="modal" data-bs-target="#bookModal">Read
 												More
 											</button>
 										</figure>
@@ -459,18 +400,16 @@
 								</div>
 
 								<div class="col-md-3">
-									<div class="product-item"
-									data-title="Great Travel At Desert"
-								 	data-author="Sanchit Howdy"
-								 	data-price="$38.00"
-								 	data-image="images/tab-item6.jpg"
-								 	data-description="The desert is great.">
-									<figure class="product-style">
-										<img src="images/tab-item6.jpg" alt="Books" class="product-item">
-										<button type="button" class="add-to-cart" data-product-tile="add-to-cart" data-bs-toggle="modal" data-bs-target="#bookModal">Read
-											More
-										</button>
-									</figure>
+									<div class="product-item" data-title="Great Travel At Desert"
+										data-author="Sanchit Howdy" data-price="$38.00"
+										data-image="images/tab-item6.jpg" data-description="The desert is great.">
+										<figure class="product-style">
+											<img src="images/tab-item6.jpg" alt="Books" class="product-item">
+											<button type="button" class="add-to-cart" data-product-tile="add-to-cart"
+												data-bs-toggle="modal" data-bs-target="#bookModal">Read
+												More
+											</button>
+										</figure>
 										<figcaption>
 											<h3>Great travel at desert</h3>
 											<span>Sanchit Howdy</span>
@@ -480,16 +419,13 @@
 								</div>
 
 								<div class="col-md-3">
-									<div class="product-item"
-									data-title="Life Among the Pirates"
-								 	data-author="Armor Ramsey"
-								 	data-price="$40.00"
-								 	data-image="images/tab-item7.jpg"
-								 	data-description="A fresh take on the sea nomads.">
+									<div class="product-item" data-title="Life Among the Pirates"
+										data-author="Armor Ramsey" data-price="$40.00" data-image="images/tab-item7.jpg"
+										data-description="A fresh take on the sea nomads.">
 										<figure class="product-style">
 											<img src="images/tab-item7.jpg" alt="Books" class="product-item">
-											<button type="button" class="add-to-cart"
-												data-product-tile="add-to-cart" data-bs-toggle="modal" data-bs-target="#bookModal">Read 
+											<button type="button" class="add-to-cart" data-product-tile="add-to-cart"
+												data-bs-toggle="modal" data-bs-target="#bookModal">Read
 												More</button>
 										</figure>
 										<figcaption>
@@ -501,16 +437,14 @@
 								</div>
 
 								<div class="col-md-3">
-									<div class="product-item"
-									data-title="Simple way of piece life"
-								 	data-author="Armor Ramsey"
-								 	data-price="$40.00"
-								 	data-image="images/tab-item8.jpg"
-									data-description="A peaceful way to live a meaningful life.">
+									<div class="product-item" data-title="Simple way of piece life"
+										data-author="Armor Ramsey" data-price="$40.00" data-image="images/tab-item8.jpg"
+										data-description="A peaceful way to live a meaningful life.">
 										<figure class="product-style">
 											<img src="images/tab-item8.jpg" alt="Books" class="product-item">
-											<button type="button" class="add-to-cart" data-product-tile="add-to-cart" data-bs-toggle="modal" data-bs-target="#bookModal">Read
-													More
+											<button type="button" class="add-to-cart" data-product-tile="add-to-cart"
+												data-bs-toggle="modal" data-bs-target="#bookModal">Read
+												More
 											</button>
 										</figure>
 										<figcaption>
@@ -527,16 +461,13 @@
 						<div id="technology" data-tab-content>
 							<div class="row">
 								<div class="col-md-3">
-									<div class="product-item"
-									data-title="Peaceful Enlightenment"
-									data-author="Marmik Lama"
-									data-price="$40.00"
-									data-image="images/tab-item5.jpg"
-									data-description="Find your peace.">
+									<div class="product-item" data-title="Peaceful Enlightenment"
+										data-author="Marmik Lama" data-price="$40.00" data-image="images/tab-item5.jpg"
+										data-description="Find your peace.">
 										<figure class="product-style">
 											<img src="images/tab-item5.jpg" alt="Books" class="product-item">
-											<button type="button" class="add-to-cart"
-												data-product-tile="add-to-cart" data-bs-toggle="modal" data-bs-target="#bookModal">Read 
+											<button type="button" class="add-to-cart" data-product-tile="add-to-cart"
+												data-bs-toggle="modal" data-bs-target="#bookModal">Read
 												More
 											</button>
 										</figure>
@@ -548,64 +479,14 @@
 									</div>
 								</div>
 
-									<div class="col-md-3">
-										<div class="product-item"
-										data-title="Great Travel At Desert"
-										data-author="Sanchit Howdy"
-										data-price="$38.00"
-										data-image="images/tab-item6.jpg"
-										data-description="The desert is great.">
-										<figure class="product-style">
-											<img src="images/tab-item6.jpg" alt="Books" class="product-item">
-											<button type="button" class="add-to-cart" data-product-tile="add-to-cart" data-bs-toggle="modal" data-bs-target="#bookModal">Read
-												More
-											</button>
-										</figure>
-											<figcaption>
-												<h3>Great travel at desert</h3>
-												<span>Sanchit Howdy</span>
-												<div class="item-price">$ 40.00</div>
-											</figcaption>
-										</div>
-									</div>
-
-									<div class="col-md-3">
-										<div class="product-item"
-										data-title="Life Among the Pirates"
-										data-author="Armor Ramsey"
-										data-price="$40.00"
-										data-image="images/tab-item7.jpg"
-										data-description="A fresh take on the sea nomads.">
-											<figure class="product-style">
-												<img src="images/tab-item7.jpg" alt="Books" class="product-item">
-												<button type="button" class="add-to-cart"
-													data-product-tile="add-to-cart" data-bs-toggle="modal" data-bs-target="#bookModal">Read 
-													More</button>
-											</figure>
-											<figcaption>
-												<h3>Life among the pirates</h3>
-												<span>Armor Ramsey</span>
-												<div class="item-price">$ 40.00</div>
-											</figcaption>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div id="romantic" data-tab-content>
-							<div class="row">
-
 								<div class="col-md-3">
-									<div class="product-item"
-										data-title="Great Travel At Desert"
-										data-author="Sanchit Howdy"
-										data-price="$38.00"
-										data-image="images/tab-item6.jpg"
-										data-description="The desert is great.">
+									<div class="product-item" data-title="Great Travel At Desert"
+										data-author="Sanchit Howdy" data-price="$38.00"
+										data-image="images/tab-item6.jpg" data-description="The desert is great.">
 										<figure class="product-style">
 											<img src="images/tab-item6.jpg" alt="Books" class="product-item">
-											<button type="button" class="add-to-cart" data-product-tile="add-to-cart" data-bs-toggle="modal" data-bs-target="#bookModal">Read
+											<button type="button" class="add-to-cart" data-product-tile="add-to-cart"
+												data-bs-toggle="modal" data-bs-target="#bookModal">Read
 												More
 											</button>
 										</figure>
@@ -618,18 +499,14 @@
 								</div>
 
 								<div class="col-md-3">
-									<div class="product-item"
-									data-title="Life Among the Pirates"
-									data-author="Armor Ramsey"
-									data-price="$40.00"
-									data-image="images/tab-item7.jpg"
-									data-description="A fresh take on the sea nomads.">
+									<div class="product-item" data-title="Life Among the Pirates"
+										data-author="Armor Ramsey" data-price="$40.00" data-image="images/tab-item7.jpg"
+										data-description="A fresh take on the sea nomads.">
 										<figure class="product-style">
 											<img src="images/tab-item7.jpg" alt="Books" class="product-item">
-											<button type="button" class="add-to-cart"
-													data-product-tile="add-to-cart" data-bs-toggle="modal" data-bs-target="#bookModal">Read 
-													More
-											</button>
+											<button type="button" class="add-to-cart" data-product-tile="add-to-cart"
+												data-bs-toggle="modal" data-bs-target="#bookModal">Read
+												More</button>
 										</figure>
 										<figcaption>
 											<h3>Life among the pirates</h3>
@@ -638,154 +515,182 @@
 										</figcaption>
 									</div>
 								</div>
-								
-								<div class="col-md-3">
-									<div class="product-item"
-									data-title="Once Upon A Time"
-									data-author="Klien Marry"
-									data-price="$35.00"
-									data-image="images/product-item4.jpg"
-									data-description="A life adventure like never before.">
-										<figure class="product-style">
-											<img src="images/tab-item2.jpg" alt="Books" class="product-item">
-											<button type="button" class="add-to-cart"
-												data-product-tile="add-to-cart" data-bs-toggle="modal" data-bs-target="#bookModal">Read 
-												More
-											</button>
-										</figure>
-										<figcaption>
-											<h3>Once upon a time</h3>
-											<span>Klien Marry</span>
-											<div class="item-price">$ 35.00</div>
-										</figcaption>
-									</div>
-								</div>
-
-								<div class="col-md-3">
-									<div class="product-item"
-									data-title="Just Felt from Outside"
-									data-author="Nicole Wilson"
-									data-price="$40.00"
-									data-image="images/tab-item4.jpg"
-									data-description="Go out, it's fun!">
-										<figure class="product-style">
-											<img src="images/tab-item4.jpg" alt="Books" class="product-item">
-											<button type="button" class="add-to-cart"
-												data-product-tile="add-to-cart" data-bs-toggle="modal" data-bs-target="#bookModal">Read 
-												More
-											</button>
-										</figure>
-										<figcaption>
-											<h3>Just felt from outside</h3>
-											<span>Nicole Wilson</span>
-											<div class="item-price">$ 40.00</div>
-										</figcaption>
-									</div>
-								</div>
-
 							</div>
 						</div>
-
-						<div id="adventure" data-tab-content>
-							<div class="row">
-								<div class="col-md-3">
-									<div class="product-item"
-									data-title="Life Among the Pirates"
-									data-author="Armor Ramsey"
-									data-price="$40.00"
-									data-image="images/tab-item7.jpg"
-									data-description="A fresh take on the sea nomads.">
-										<figure class="product-style">
-											<img src="images/tab-item7.jpg" alt="Books" class="product-item">
-											<button type="button" class="add-to-cart"
-													data-product-tile="add-to-cart" data-bs-toggle="modal" data-bs-target="#bookModal">Read 
-													More
-											</button>
-										</figure>
-										<figcaption>
-											<h3>Life among the pirates</h3>
-											<span>Armor Ramsey</span>
-											<div class="item-price">$ 40.00</div>
-										</figcaption>
-									</div>
-								</div>
-
-								<div class="col-md-3">
-									<div class="product-item"
-									data-title="Simple way of piece life"
-								 	data-author="Armor Ramsey"
-								 	data-price="$40.00"
-								 	data-image="images/tab-item8.jpg"
-									data-description="A peaceful way to live a meaningful life.">
-										<figure class="product-style">
-											<img src="images/tab-item8.jpg" alt="Books" class="product-item">
-											<button type="button" class="add-to-cart" data-product-tile="add-to-cart" data-bs-toggle="modal" data-bs-target="#bookModal">Read
-													More
-											</button>
-										</figure>
-										<figcaption>
-											<h3>Simple way of piece life</h3>
-											<span>Armor Ramsey</span>
-											<div class="item-price">$ 40.00</div>
-										</figcaption>
-									</div>
-								</div>
-
-							</div>
-						</div>
-
-						<div id="fictional" data-tab-content>
-							<div class="row">
-								<div class="col-md-3">
-									<div class="product-item"
-									data-title="Life Among the Pirates"
-									data-author="Armor Ramsey"
-									data-price="$40.00"
-									data-image="images/tab-item7.jpg"
-									data-description="A fresh take on the sea nomads.">
-										<figure class="product-style">
-											<img src="images/tab-item7.jpg" alt="Books" class="product-item">
-											<button type="button" class="add-to-cart"
-													data-product-tile="add-to-cart" data-bs-toggle="modal" data-bs-target="#bookModal">Read 
-													More
-											</button>
-										</figure>
-										<figcaption>
-											<h3>Life among the pirates</h3>
-											<span>Armor Ramsey</span>
-											<div class="item-price">$ 40.00</div>
-										</figcaption>
-									</div>
-								</div>
-
-								<div class="col-md-3">
-									<div class="product-item"
-									data-title="Simple way of piece life"
-								 	data-author="Armor Ramsey"
-								 	data-price="$40.00"
-								 	data-image="images/tab-item8.jpg"
-									data-description="A peaceful way to live a meaningful life.">
-										<figure class="product-style">
-											<img src="images/tab-item8.jpg" alt="Books" class="product-item">
-											<button type="button" class="add-to-cart" data-product-tile="add-to-cart" data-bs-toggle="modal" data-bs-target="#bookModal">Read
-													More
-											</button>
-										</figure>
-										<figcaption>
-											<h3>Simple way of piece life</h3>
-											<span>Armor Ramsey</span>
-											<div class="item-price">$ 40.00</div>
-										</figcaption>
-									</div>
-								</div>
-							</div>
-						</div>
-
 					</div>
 
-				</div><!--inner-tabs-->
+					<div id="romantic" data-tab-content>
+						<div class="row">
 
-			</div>
+							<div class="col-md-3">
+								<div class="product-item" data-title="Great Travel At Desert"
+									data-author="Sanchit Howdy" data-price="$38.00" data-image="images/tab-item6.jpg"
+									data-description="The desert is great.">
+									<figure class="product-style">
+										<img src="images/tab-item6.jpg" alt="Books" class="product-item">
+										<button type="button" class="add-to-cart" data-product-tile="add-to-cart"
+											data-bs-toggle="modal" data-bs-target="#bookModal">Read
+											More
+										</button>
+									</figure>
+									<figcaption>
+										<h3>Great travel at desert</h3>
+										<span>Sanchit Howdy</span>
+										<div class="item-price">$ 40.00</div>
+									</figcaption>
+								</div>
+							</div>
+
+							<div class="col-md-3">
+								<div class="product-item" data-title="Life Among the Pirates" data-author="Armor Ramsey"
+									data-price="$40.00" data-image="images/tab-item7.jpg"
+									data-description="A fresh take on the sea nomads.">
+									<figure class="product-style">
+										<img src="images/tab-item7.jpg" alt="Books" class="product-item">
+										<button type="button" class="add-to-cart" data-product-tile="add-to-cart"
+											data-bs-toggle="modal" data-bs-target="#bookModal">Read
+											More
+										</button>
+									</figure>
+									<figcaption>
+										<h3>Life among the pirates</h3>
+										<span>Armor Ramsey</span>
+										<div class="item-price">$ 40.00</div>
+									</figcaption>
+								</div>
+							</div>
+
+							<div class="col-md-3">
+								<div class="product-item" data-title="Once Upon A Time" data-author="Klien Marry"
+									data-price="$35.00" data-image="images/product-item4.jpg"
+									data-description="A life adventure like never before.">
+									<figure class="product-style">
+										<img src="images/tab-item2.jpg" alt="Books" class="product-item">
+										<button type="button" class="add-to-cart" data-product-tile="add-to-cart"
+											data-bs-toggle="modal" data-bs-target="#bookModal">Read
+											More
+										</button>
+									</figure>
+									<figcaption>
+										<h3>Once upon a time</h3>
+										<span>Klien Marry</span>
+										<div class="item-price">$ 35.00</div>
+									</figcaption>
+								</div>
+							</div>
+
+							<div class="col-md-3">
+								<div class="product-item" data-title="Just Felt from Outside"
+									data-author="Nicole Wilson" data-price="$40.00" data-image="images/tab-item4.jpg"
+									data-description="Go out, it's fun!">
+									<figure class="product-style">
+										<img src="images/tab-item4.jpg" alt="Books" class="product-item">
+										<button type="button" class="add-to-cart" data-product-tile="add-to-cart"
+											data-bs-toggle="modal" data-bs-target="#bookModal">Read
+											More
+										</button>
+									</figure>
+									<figcaption>
+										<h3>Just felt from outside</h3>
+										<span>Nicole Wilson</span>
+										<div class="item-price">$ 40.00</div>
+									</figcaption>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+					<div id="adventure" data-tab-content>
+						<div class="row">
+							<div class="col-md-3">
+								<div class="product-item" data-title="Life Among the Pirates" data-author="Armor Ramsey"
+									data-price="$40.00" data-image="images/tab-item7.jpg"
+									data-description="A fresh take on the sea nomads.">
+									<figure class="product-style">
+										<img src="images/tab-item7.jpg" alt="Books" class="product-item">
+										<button type="button" class="add-to-cart" data-product-tile="add-to-cart"
+											data-bs-toggle="modal" data-bs-target="#bookModal">Read
+											More
+										</button>
+									</figure>
+									<figcaption>
+										<h3>Life among the pirates</h3>
+										<span>Armor Ramsey</span>
+										<div class="item-price">$ 40.00</div>
+									</figcaption>
+								</div>
+							</div>
+
+							<div class="col-md-3">
+								<div class="product-item" data-title="Simple way of piece life"
+									data-author="Armor Ramsey" data-price="$40.00" data-image="images/tab-item8.jpg"
+									data-description="A peaceful way to live a meaningful life.">
+									<figure class="product-style">
+										<img src="images/tab-item8.jpg" alt="Books" class="product-item">
+										<button type="button" class="add-to-cart" data-product-tile="add-to-cart"
+											data-bs-toggle="modal" data-bs-target="#bookModal">Read
+											More
+										</button>
+									</figure>
+									<figcaption>
+										<h3>Simple way of piece life</h3>
+										<span>Armor Ramsey</span>
+										<div class="item-price">$ 40.00</div>
+									</figcaption>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+					<div id="fictional" data-tab-content>
+						<div class="row">
+							<div class="col-md-3">
+								<div class="product-item" data-title="Life Among the Pirates" data-author="Armor Ramsey"
+									data-price="$40.00" data-image="images/tab-item7.jpg"
+									data-description="A fresh take on the sea nomads.">
+									<figure class="product-style">
+										<img src="images/tab-item7.jpg" alt="Books" class="product-item">
+										<button type="button" class="add-to-cart" data-product-tile="add-to-cart"
+											data-bs-toggle="modal" data-bs-target="#bookModal">Read
+											More
+										</button>
+									</figure>
+									<figcaption>
+										<h3>Life among the pirates</h3>
+										<span>Armor Ramsey</span>
+										<div class="item-price">$ 40.00</div>
+									</figcaption>
+								</div>
+							</div>
+
+							<div class="col-md-3">
+								<div class="product-item" data-title="Simple way of piece life"
+									data-author="Armor Ramsey" data-price="$40.00" data-image="images/tab-item8.jpg"
+									data-description="A peaceful way to live a meaningful life.">
+									<figure class="product-style">
+										<img src="images/tab-item8.jpg" alt="Books" class="product-item">
+										<button type="button" class="add-to-cart" data-product-tile="add-to-cart"
+											data-bs-toggle="modal" data-bs-target="#bookModal">Read
+											More
+										</button>
+									</figure>
+									<figcaption>
+										<h3>Simple way of piece life</h3>
+										<span>Armor Ramsey</span>
+										<div class="item-price">$ 40.00</div>
+									</figcaption>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div><!--inner-tabs-->
+
+		</div>
 		</div>
 	</section>
 
@@ -807,19 +712,17 @@
 			</div>
 			<h2 class="section-title">Books with offer</h2>
 		</div>
-	
+
 		<div class="container">
 			<div class="row" data-aos="fade-up">
 				<div class="col-md-4">
-					<div class="product-item"
-						data-title="Way of Happiness"
-						data-author="Ananda Kumar"
-						data-price="$40.00"
-						data-image="images/product-item5.jpg"
+					<div class="product-item" data-title="Way of Happiness" data-author="Ananda Kumar"
+						data-price="$40.00" data-image="images/product-item5.jpg"
 						data-description="Find happiness your way.">
 						<figure class="product-style">
 							<img src="images/product-item5.jpg" alt="Books" class="product-item">
-							<button type="button" class="add-to-cart" data-product-tile="add-to-cart" data-bs-toggle="modal" data-bs-target="#bookModal">Read More</button>
+							<button type="button" class="add-to-cart" data-product-tile="add-to-cart"
+								data-bs-toggle="modal" data-bs-target="#bookModal">Read More</button>
 						</figure>
 						<figcaption>
 							<h3>Way of Happiness</h3>
@@ -830,17 +733,15 @@
 						</figcaption>
 					</div>
 				</div>
-	
+
 				<div class="col-md-4">
-					<div class="product-item"
-						data-title="Life of Seacrits"
-						data-author="Galista Marie"
-						data-price="$38.00"
-						data-image="images/product-item6.jpg"
+					<div class="product-item" data-title="Life of Seacrits" data-author="Galista Marie"
+						data-price="$38.00" data-image="images/product-item6.jpg"
 						data-description="Interesting investigation of seacrits">
 						<figure class="product-style">
 							<img src="images/product-item6.jpg" alt="Books" class="product-item">
-							<button type="button" class="add-to-cart" data-product-tile="add-to-cart" data-bs-toggle="modal" data-bs-target="#bookModal">Read More</button>
+							<button type="button" class="add-to-cart" data-product-tile="add-to-cart"
+								data-bs-toggle="modal" data-bs-target="#bookModal">Read More</button>
 						</figure>
 						<figcaption>
 							<h3>Life of Seacrits</h3>
@@ -851,17 +752,15 @@
 						</figcaption>
 					</div>
 				</div>
-	
+
 				<div class="col-md-4">
-					<div class="product-item"
-						data-title="Musical"
-						data-author="Karim Achard"
-						data-price="$30.00"
+					<div class="product-item" data-title="Musical" data-author="Karim Achard" data-price="$30.00"
 						data-image="images/product-item8.jpg"
 						data-description="Learn and appreciate the history and culture of musicals">
 						<figure class="product-style">
 							<img src="images/product-item8.jpg" alt="Books" class="product-item">
-							<button type="button" class="add-to-cart" data-product-tile="add-to-cart" data-bs-toggle="modal" data-bs-target="#bookModal">Read More</button>
+							<button type="button" class="add-to-cart" data-product-tile="add-to-cart"
+								data-bs-toggle="modal" data-bs-target="#bookModal">Read More</button>
 						</figure>
 						<figcaption>
 							<h3>Once upon a time</h3>
@@ -1035,24 +934,25 @@
 					<p id="modal-title"></p>
 					<p id="modal-price"></p>
 					<p id="modal-description"></p>
-					<p id="modal-quantity"></p> 
+					<p id="modal-quantity"></p>
 				</div>
 				<div class="modal-footer">
-					<button type="button" class="btn btn-primary" id="addToCartBtn" data-book_id="${book.book_id}">Add to Cart</button>
+					<button type="button" class="btn btn-primary" id="addToCartBtn" data-book_id="${book.book_id}">Add
+						to Cart</button>
 					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	 <script src="js/jquery-1.11.0.min.js"></script>
-	 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+	<script src="js/jquery-1.11.0.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
 		crossorigin="anonymous"></script>
-	 <script src="js/plugins.js"></script>
-	 <script src="js/script.js"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/script.js"></script>
 
-	 <script>
+	<script>
 		let currentBookId = null;  // Track the current book ID globally
 
 		// Function to handle adding a book to the cart
@@ -1281,7 +1181,7 @@
 
 	</script>
 
-	
+
 
 	<script>
 		async function displayUserData() {
@@ -1300,7 +1200,7 @@
 
 				// Display user data in the HTML
 				//document.getElementById("userEmail").innerText = "Email: " + data.userEmail;
-				document.getElementById("userName").innerText = "Welcome " + data.userName +"!";
+				document.getElementById("userName").innerText = "Welcome " + data.userName + "!";
 				//document.getElementById("userId").innerText = "User ID: " + data.userId;
 			} else {
 				document.getElementById("userInfo").innerText = "No user data found.";
@@ -1312,7 +1212,7 @@
 
 	</script>
 
-	
+
 
 </body>
 
